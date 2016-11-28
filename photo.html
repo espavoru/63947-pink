@@ -23,21 +23,23 @@
           </div>
         </nav>
       </div>
-      <div class="page-header__title">Фотографии пользователей</div>
     </header>
     <main>
+      <section class="top-background  top-background--photo-page">
+        <div class="top-background__title">Конкурс на самое безбашенное путешествие с Пинк</div>
+      </section>
       <section class="picture-users">
         <p class="picture-users__title">
           Взгляните на фотографии, которые выкладывают пользователи!<br>
           Видите, как не хватает ваших?
         </p>
         <div class="picture-users__item">
-          <div class="user-pic  user-pic--panarama-day">
+          <div class="user-picture  user-picture--panarama-day">
             <img src="http://placehold.it/150x100" alt="Панарама дня">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Анна</cite>
-            <time class="user-desc__post-time" datetime="">(5 минут назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(5 минут назад)</time>
           </div>
           <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="user-likes">
@@ -47,12 +49,12 @@
           </div>
         </div>
         <div class="picture-users__item">
-          <div class="user-pic">
+          <div class="user-picture">
             <img src="http://placehold.it/150x100" alt="Авто">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Левон</cite>
-            <time class="user-desc__post-time" datetime="">(5 часов назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(5 часов назад)</time>
           </div>
           <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="user-likes">
@@ -62,12 +64,12 @@
           </div>
         </div>
         <div class="picture-users__item">
-          <div class="user-pic">
+          <div class="user-picture">
             <img src="http://placehold.it/150x100" alt="Барабаны">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Антон</cite>
-            <time class="user-desc__post-time" datetime="">(12 часов назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(12 часов назад)</time>
           </div>
           <p>Соседи будут рады!</p>
           <div class="user-likes">
@@ -77,12 +79,12 @@
           </div>
         </div>
         <div class="picture-users__item">
-          <div class="user-pic">
+          <div class="user-picture">
             <img src="http://placehold.it/150x100" alt="Прозрачная крыша">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Борис</cite>
-            <time class="user-desc__post-time" datetime="">(20 часов назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(20 часов назад)</time>
           </div>
           <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="user-likes">
@@ -92,12 +94,12 @@
           </div>
         </div>
         <div class="picture-users__item">
-          <div class="user-pic">
+          <div class="user-picture">
             <img src="http://placehold.it/150x100" alt="Кубанская бахча">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Сергей</cite>
-            <time class="user-desc__post-time" datetime="">(25 часов назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(25 часов назад)</time>
           </div>
           <p>Самая кубанская в мире!</p>
           <div class="user-likes">
@@ -107,12 +109,12 @@
           </div>
         </div>
         <div class="picture-users__item">
-          <div class="user-pic">
+          <div class="user-picture">
             <img src="http://placehold.it/150x100" alt="Вид с вершины">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Максим</cite>
-            <time class="user-desc__post-time" datetime="">(40 часов назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(40 часов назад)</time>
           </div>
           <p>Где снег-то?</p>
           <div class="user-likes">
@@ -122,12 +124,12 @@
           </div>
         </div>
         <div class="picture-users__item">
-          <div class="user-pic">
+          <div class="user-picture">
             <img src="http://placehold.it/150x100" alt="С высоты полета">
           </div>
           <div class="user-desc">
             <cite class="user-desc__name">Максим</cite>
-            <time class="user-desc__post-time" datetime="">(40 часов назад)</time>
+            <time class="user-desc__post-time" datetime="2016-11-24T15:18:20">(40 часов назад)</time>
           </div>
           <p>Всем GM и взаимные лайки!</p>
           <div class="user-likes">
@@ -137,23 +139,22 @@
           </div>
         </div>
         <p class="picture-users__appeal">
-          Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
       <section class="photo-edit">
         <div class="photo-edit__img">
           <img src="http://placehold.it/150x100" alt="">
         </div>
-        <form action="" class="photo-edit__form" method="post">
+        <form action="index.html" class="photo-edit__form" method="post">
           <div class="edit-photo">
             <label class="edit-photo__crop" for="crop"></label>
             <label class="edit-photo__color" for="color"></label>
             <label class="edit-photo__light" for="light"></label>
           </div>
-          <input class"photo-edit__form-range" type="range" name="crop" id="crop" min="-50" max="50">
-          <input class"photo-edit__form-range" type="range" name="color" id="color" min="-50" max="50">
-          <input class"photo-edit__form-range" type="range" name="light" id="light" min="-50" max="50">
+          <input class="photo-edit__form-range" type="range" name="crop" id="crop" min="-50" max="50">
+          <input class="photo-edit__form-range" type="range" name="color" id="color" min="-50" max="50">
+          <input class="photo-edit__form-range" type="range" name="light" id="light" min="-50" max="50">
           <hr class="photo-edit__form-line">
           <input class="photo-edit__form-submit btn" type="submit" value="Запостить">
           <input class="photo-edit__form-submit btn" type="reset" value="Отмена">
