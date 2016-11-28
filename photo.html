@@ -146,18 +146,24 @@
         <div class="photo-edit__img">
           <img src="http://placehold.it/150x100" alt="">
         </div>
-        <form action="index.html" class="photo-edit__form" method="post">
-          <div class="edit-photo">
-            <label class="edit-photo__crop" for="crop"></label>
-            <label class="edit-photo__color" for="color"></label>
-            <label class="edit-photo__light" for="light"></label>
-          </div>
-          <input class="photo-edit__form-range" type="range" name="crop" id="crop" min="-50" max="50">
-          <input class="photo-edit__form-range" type="range" name="color" id="color" min="-50" max="50">
-          <input class="photo-edit__form-range" type="range" name="light" id="light" min="-50" max="50">
-          <hr class="photo-edit__form-line">
-          <input class="photo-edit__form-submit btn" type="submit" value="Запостить">
-          <input class="photo-edit__form-submit btn" type="reset" value="Отмена">
+        <form class="photo-edit__form " action="index.html"  method="post">
+          <fieldset class="photo-edit__picture">
+            <img src="http://placehold.it/150x100" alt="">
+          </fieldset>
+          <fieldset class="photo-edit__toggles">
+            <div class="edit-photo">
+              <label class="edit-photo__crop" for="crop"></label>
+              <label class="edit-photo__color" for="color"></label>
+              <label class="edit-photo__light" for="light"></label>
+            </div>
+            <input class="photo-edit__form-range" type="range" name="crop" id="crop" min="-50" max="50">
+            <input class="photo-edit__form-range" type="range" name="color" id="color" min="-50" max="50">
+            <input class="photo-edit__form-range" type="range" name="light" id="light" min="-50" max="50">
+          </fieldset>
+          <fieldset class="photo-edit__buttons">
+            <input class="photo-edit__form-submit btn" type="submit" value="Запостить">
+            <input class="photo-edit__form-submit btn" type="reset" value="Отмена">
+          </fieldset>
         </form>
       </section>
     </main>
