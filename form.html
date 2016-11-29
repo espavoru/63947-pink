@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header page-header--form">
+      <h1 class="visually-hidden">"Pink" - лучший фото редактор</h1>
+      <div class="page-header__top-wrap">
+        <div class="page-header__logo">
+          <img src="http://placehold.it/150x100" alt="Pink">
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a href="">Главная</a></li>
+              <li class="main-nav__item"><a href="">Фотографии</a></li>
+              <li class="main-nav__item"><a href="">Конкурс</a></li>
+              <li class="main-nav__item"><a href="">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="top-background  top-background--form-page">
+        <div class="top-background__img">
+          <div class="top-background__title">Конкурс на самое безбашенное путешествие с Пинк</div>
+        </div>
+      </section>
+      <form class="form" action="index.html" method="post">
+        <fieldset class="form__user-info">
+        <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <label>Фамилия:
+            <input type="text" name="user-surname" placeholder="Укажите фамилию" required>
+          </label>
+          <label>Имя:
+            <input type="text" name="user-name" placeholder="Введите ваше имя" required>
+          </label>
+          <label>Отчество:
+            <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <fieldset class="form__user-achievements">
+          <legend class="form__user-achievements-title">Ваши безбашные достижения в путешествии</legend>
+          <div class="form__user-achievements-item">
+            <input type="checkbox" name="shark" id="shark" checked>
+            <label for="shark">Сделал селфи с акулой</label>
+          </div>
+          <div class="form__user-achievements-item">
+            <input type="checkbox" name="beach" id="beach" checked>
+            <label for="beach">Обгорел на пляже</label>
+          </div>
+          <div class="form__user-achievements-item">
+            <input type="checkbox" name="chuck-norris" id="chuck-norris">
+            <label for="chuck-norris">Видел Чака Норриса</label>
+          </div>
+          <div class="form__user-achievements-item">
+            <input type="checkbox" name="souvenirs" id="souvenirs">
+            <label for="souvenirs">Накупил сувениров</label>
+          </div>
+          <div class="form__user-achievements-item">
+            <input type="checkbox" name="tower" id="tower">
+            <label for="tower">Удержал башню</label>
+          </div>
+          <div class="form__user-achievements-item">
+            <input type="checkbox" name="hotel" id="hotel">
+            <label for="hotel">Разгромил отель</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__user-contacts">
+          <label>Номер телефона
+            <input type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </label>
+          <label>Адресок почты
+            <input type="email" name="email" placeholder="Введите почту" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__user-apps">
+          <legend class="form__user-apps-title">С каким приложение путешествовали</legend>
+          <div class="form__user-apps-item">
+            <input type="radio" name="ios" id="ios" checked>
+            <label for="ios">Pink для iOS</label>
+          </div>
+          <div class="form__user-apps-item">
+            <input type="radio" name="android" id="android">
+            <label for="android">Pink на Android</label>
+          </div>
+          <div class="form__user-apps-item">
+            <input type="radio" name="windows" id="windows">
+            <label for="windows">Windows Phone</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__user-comment">
+          <label for="comment">Опишите свои эмоции</label>
+          <textarea name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <input class="form__submit-button" type="submit" value="Отправить форму">
+          <div class="form__descrioption-required-fields">
+            <span>*</span> 	&mdash; обязательные поля
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="http://placehold.it/150x100" alt="Pink">
+      </div>
+      <ul class="page-footer__social">
+        <li class="social-item"><a href="" class="social-link social-link-twitter">Мы в Твиттере</a></li>
+        <li class="social-item"><a href="" class="social-link social-link-facebook">Мы в Фейсбуке</a></li>
+        <li class="social-item"><a href="" class="social-link social-link-youtube">Мы в Ютубе</a></li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано
+        <a href="" class="page-footer__copyright-link">HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
