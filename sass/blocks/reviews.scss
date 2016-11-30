@@ -1,0 +1,22 @@
+.reviews {
+  margin-top: -40px;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.rewiews__items {
+  padding: 0;
+}
+.reviews__item {
+  list-style: none;
+  & p {
+    @include font;
+    line-height: 30px;
+    color: #283645;
+  }
+}
+.reviews__item-title {
+  @include font(18px, 700);
+  line-height: 30px;
+  color: #000;
+}
