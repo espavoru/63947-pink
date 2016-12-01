@@ -1,0 +1,40 @@
+.download-apps {
+  width: 100%;
+  height: 271px;
+  background-color: #1d2631;
+}
+.download-apps__btn {
+  display: block;
+  width: 281px;
+  height: 55px;
+  margin: 19px auto;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  @include font(18px, 700);
+  text-align: center;
+  line-height: 49px;
+}
+.download-apps__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 64.0625%;
+  margin: 0 auto;
+  padding: 0;
+}
+.download-apps__item {
+  display: inline-block;
+  list-style: none;
+}
+.download-apps__link {
+  display: block;
+}
+.download-apps__descriptions {
+  width: 76%;
+  margin: 0 auto;
+  text-align: center;
+  @include font(14px, 300);
+  line-height: 24px;
+  color: #fff;
+}

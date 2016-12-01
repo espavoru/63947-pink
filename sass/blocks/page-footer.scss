@@ -1,0 +1,25 @@
+.page-footer {
+  padding: 40px;
+}
+.page-footer__logo {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.page-footer__social {
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: space-between;
+  width: 177px;
+  padding: 0;
+}
+.page-footer__copyright {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.page-footer__copyright-link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  background: url('../img/logo-htmlacademy.svg')
+}

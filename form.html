@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header page-header--form">
       <h1 class="visually-hidden">"Pink" - лучший фото редактор</h1>
-      <div class="page-header__top-wrap">
-        <div class="page-header__logo">
-          <img src="http://placehold.it/150x100" alt="Pink">
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="">Главная</a></li>
-              <li class="main-nav__item"><a href="">Фотографии</a></li>
-              <li class="main-nav__item"><a href="">Конкурс</a></li>
-              <li class="main-nav__item"><a href="">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+      <div class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
       </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <img src="img/icon-menu-burger.svg" alt="">
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="">Главная</a></li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="top-background  top-background--form-page">
@@ -79,7 +80,7 @@
           </label>
         </fieldset>
         <fieldset class="form__user-apps">
-          <legend class="form__user-apps-title">С каким приложение путешествовали</legend>
+          <legend class="form__user-apps-title">С каким приложением путешествовали</legend>
           <div class="form__user-apps-item">
             <input type="radio" name="ios" id="ios" checked>
             <label for="ios">Pink для iOS</label>
@@ -105,17 +106,17 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img src="http://placehold.it/150x100" alt="Pink">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Pink">
       </div>
       <ul class="page-footer__social">
-        <li class="social-item"><a href="" class="social-link social-link-twitter">Мы в Твиттере</a></li>
-        <li class="social-item"><a href="" class="social-link social-link-facebook">Мы в Фейсбуке</a></li>
-        <li class="social-item"><a href="" class="social-link social-link-youtube">Мы в Ютубе</a></li>
+        <li class="social-item"><a class="social-link social-link-twitter visually-hidden" href="">Мы в Твиттере</a></li>
+        <li class="social-item"><a class="social-link social-link-facebook visually-hidden" href="">Мы в Фейсбуке</a></li>
+        <li class="social-item"><a class="social-link social-link-youtube visually-hidden" href="">Мы в Ютубе</a></li>
       </ul>
-      <p class="page-footer__copyright">
+      <div class="page-footer__copyright">
         Разработано
-        <a href="" class="page-footer__copyright-link">HTML Academy</a>
-      </p>
+        <a class="page-footer__copyright-link visually-hidden" href="http://htmlacademy.ru">HTML Academy</a>
+      </div>
     </footer>
   </body>
 </html>

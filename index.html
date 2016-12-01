@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">"Pink" - лучший фото редактор</h1>
-      <div class="page-header__top-wrap">
-        <div class="page-header__logo">
-          <img src="http://placehold.it/150x100" alt="Pink">
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="">Главная</a></li>
-              <li class="main-nav__item"><a href="">Фотографии</a></li>
-              <li class="main-nav__item"><a href="">Конкурс</a></li>
-              <li class="main-nav__item"><a href="">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+      <div class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
       </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <img src="img/icon-menu-burger.svg" alt="">
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="">Главная</a></li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="top-background top-background--main-page">
@@ -30,11 +31,23 @@
       </section>
       <section class="download-apps">
         <h2 class="download-apps__title visually-hidden">Скачать приложение</h2>
-        <a href="" class="download-apps__btn btn">Скачать приложение</a>
+        <a class="download-apps__btn btn" href="http://itunes.com">Скачать приложение</a>
         <ul class="download-apps__items">
-          <li class="download-apps__item"><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
-          <li class="download-apps__item"><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
-          <li class="download-apps__item"><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
+          <li class="download-apps__item">
+            <a class="download-apps__link" href="">
+              <img src="img/logo-apple.svg" alt="">
+            </a>
+          </li>
+          <li class="download-apps__item">
+            <a class="download-apps__link" href="">
+              <img src="img/logo-android.svg" alt="">
+            </a>
+          </li>
+          <li class="download-apps__item">
+            <a class="download-apps__link" href="">
+              <img src="img/logo-microsoft.svg" alt="">
+            </a>
+          </li>
         </ul>
         <p class="download-apps__descriptions">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -56,9 +69,9 @@
       <section class="reviews">
         <div class="reviews__wrapper  slider">
           <h2 class="reviews__title  visually-hidden">Довольные пользователи</h2>
-          <input type="radio" class="slider__input" name="reviews" id="reviews-input-1" checked>
-          <input type="radio" class="slider__input" name="reviews" id="reviews-input-2">
-          <input type="radio" class="slider__input" name="reviews" id="reviews-input-3">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
           <ul class="rewiews__items">
             <li class="reviews__item  slider__item">
               <h3 class="reviews__item-title">Николай Петров</h3>
@@ -83,9 +96,9 @@
       <section class="cost">
         <div class="cost__wrapper  slider">
           <h2 class="cost__title  visually-hidden">Стоимость</h2>
-          <input type="radio" class="slider__input" name="cost" id="cost-input-1">
-          <input type="radio" class="slider__input" name="cost" id="cost-input-2" checked>
-          <input type="radio" class="slider__input" name="cost" id="cost-input-3">
+          <input class="slider__input" type="radio" name="cost" id="cost-input-1">
+          <input class="slider__input" type="radio" name="cost" id="cost-input-2" checked>
+          <input class="slider__input" type="radio" name="cost" id="cost-input-3">
           <div class="cost__items-wrap">
             <div class="cost__item  slider__item">
               <ul class="cost__list">
@@ -130,7 +143,7 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__title  visually-hidden">Наши контакты</h2>
-        <div class="contacts__title-descriptions">Остались вопросы?<br>Свяжитесь с нами!</div>
+        <div class="contacts__title-descriptions">Остались вопросы? Свяжитесь с нами!</div>
         <div class="contacts__items">
           <h3 class="contacts__item-title">Звоните:</h3>
           <a class="contacts__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
