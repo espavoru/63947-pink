@@ -1,0 +1,15 @@
+.picture-users__title {
+  @include font;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+.picture-users__item {
+  margin-bottom: 20px;
+}
+.picture-users__appeal {
+  padding: 45px 30px;
+  @include font;
+  line-height: 30px;
+  text-align: center;
+}

@@ -1,3 +1,5 @@
+@import "normalize.scss";
+
 @import "mixins.scss";
 
 @import "global/fonts.scss";
@@ -21,5 +23,6 @@
 @import "blocks/top-background.scss";
 @import "blocks/user-descrioption.scss";
 @import "blocks/user-likes.scss";
+@import "blocks/user-info.scss";
 @import "blocks/user-picture.scss";
 @import "blocks/visually-hidden.scss";
