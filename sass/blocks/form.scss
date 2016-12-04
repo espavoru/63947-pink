@@ -1,5 +1,15 @@
 .form {
-  // padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 660px) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: 996px) {
+      width: 960px;
+      padding: 0 10px;
+  }
 }
 .form__description {
   @include font;
@@ -9,6 +19,13 @@
 }
 .form__user-info {
   padding: 0 20px 42px;
+
+  @media ($tablet) {
+    order: -3;
+  }
+  @media ($desctop) {
+    flex-basis: 50%;
+  }
   & label {
     padding-left: 20px;
     @include font;
@@ -32,6 +49,10 @@
 .form__user-achievements {
   background-color: #f2f2f2;
   padding: 0 20px;
+
+  @media ($tablet) {
+    flex-basis: 100%;
+  }
 }
 .form__user-achievements-title {
   @include font;
@@ -49,6 +70,13 @@
 }
 .form__user-contacts {
   padding: 40px 20px 42px;
+
+  @media ($tablet) {
+    order: -1;
+  }
+  @media ($desctop) {
+    flex-basis: 100%;
+  }
   & label {
     padding-left: 20px;
     @include font;
@@ -72,6 +100,13 @@
 .form__user-apps {
   background-color: #f2f2f2;
   padding: 0 20px;
+
+  @media ($tablet) {
+    order: -2;
+  }
+  @media ($tablet) {
+    flex-basis: 50%;
+  }
 }
 .form__user-apps-title {
   @include font;
@@ -104,6 +139,10 @@
     @include font(18px);
     line-height: 30px;
     color: #283645;
+  }
+
+  @media ($tablet) {
+    flex-basis: 100%;
   }
 }
 .form__submit-button {

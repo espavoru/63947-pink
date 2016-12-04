@@ -1,0 +1,13 @@
+.main-title {
+  overflow: hidden;
+  background: url('../img/bg-back-mobile@1x.jpg') center top no-repeat;
+}
+.main-title__wrapper {
+  @include container;
+}
+.main-title__header {
+  padding-top: 100px;
+  @include font(24px, 300);
+  text-align: center;
+  color: #fff;
+}

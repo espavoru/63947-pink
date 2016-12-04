@@ -1,6 +1,15 @@
 .page-footer {
   padding: 40px;
 }
+.page-footer__wrapper {
+  @include container;
+  text-align: center;
+}
+.page-footer__item {
+  @media ($tablet) {
+    display: inline-block;
+  }
+}
 .page-footer__logo {
   margin-bottom: 35px;
   text-align: center;
@@ -11,6 +20,10 @@
   justify-content: space-between;
   width: 177px;
   padding: 0;
+
+  @media ($tablet) {
+    margin: 0;
+  }
 }
 .page-footer__copyright {
   height: 40px;

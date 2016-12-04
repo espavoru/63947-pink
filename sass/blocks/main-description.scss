@@ -1,0 +1,17 @@
+.main-description {
+
+}
+.main-description__wrapper {
+  @include container;
+  line-height: 30px;
+  text-align: center;
+
+  & span {
+    @include font(0);
+
+    @media ($tablet) {
+      @include font(18px);
+    }
+  }
+
+}
