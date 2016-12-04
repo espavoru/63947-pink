@@ -4,6 +4,16 @@
 .contacts__items {
   padding: 35px;
 }
+.contacts__item-wrapper {
+  display: inline-block;
+
+  @media ($tablet) {
+    width: 284px;
+  }
+  @media ($desctop) {
+    width: 300px;
+  }
+}
 .contacts__title-descriptions {
   padding-top: 45px;
   @include font(24px, 300);

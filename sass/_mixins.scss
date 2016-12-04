@@ -1,0 +1,23 @@
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+@mixin font ($font-size: 14px, $font-weight: 400) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: 660px) {
+    width: 620px;
+  }
+  @media (min-width: 996px) {
+      width: 960px;
+      padding: 0 10px;
+  }
+}

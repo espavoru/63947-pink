@@ -1,5 +1,34 @@
 .cost {
+  height: 446px;
   background-color: #f2f2f2;
+  overflow: hidden;
+}
+.cost__wrapper {
+  position: relative;
+  @include container;
+}
+.cost__items-wrapper {
+  position: absolute;
+  top: 0;
+  left: -540px;
+  width: 1130px;
+
+  @media ($tablet) {
+    position: static;
+    display: flex;
+    width: auto;
+  }
+}
+.cost__item {
+  float: left;
+  width: 280px;
+  &:first-child .cost__list-item:first-child {
+    background-color: transparent;
+  }
+
+  @media ($tablet) {
+    flex-grow: 1;
+  }
 }
 .cost__list {
   padding: 0;
@@ -13,6 +42,9 @@
   color: #283645;
   &--title {
     background-color: #283645;
+  }
+  &:first-child {
+    height: 98px;
   }
 }
 .cost__list-title {

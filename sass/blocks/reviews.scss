@@ -4,19 +4,42 @@
   text-align: center;
   background-color: #fff;
 }
+.reviews__wrapper {
+  position: relative;
+  @include container;
+  padding-top: 94px;
+
+  @media ($tablet) {
+    padding-top: 0;
+  }
+}
 .rewiews__items {
   padding: 0;
 }
 .reviews__item {
   list-style: none;
+  &:nth-child(n+2) {
+    display: none;
+  }
   & p {
     @include font;
     line-height: 30px;
     color: #283645;
+  }
+
+  @media ($tablet) {
+
   }
 }
 .reviews__item-title {
   @include font(18px, 700);
   line-height: 30px;
   color: #000;
+}
+.reviews__item-description {
+  @include font(0);
+
+  @media ($tablet) {
+    @include font;
+  }
 }

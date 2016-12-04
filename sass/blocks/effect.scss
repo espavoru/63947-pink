@@ -1,0 +1,18 @@
+.effect {
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+  }
+  @media ($desctop) {
+    background-color: $bg-grey;
+  }
+}
+.effect__wrap {
+  @include container;
+
+  @media ($tablet) {
+    padding-top: 58px;
+    padding-bottom: 52px;
+  }
+}
