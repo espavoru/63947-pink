@@ -24,24 +24,24 @@
 }
 
 @media ($desctop) {
-	.page-header {
-		height: 110px;
-		margin-bottom: -110px;
-	}
+  .page-header {
+    height: 110px;
+    margin-bottom: -110px;
+  }
   .page-header__logo {
     float: left;
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
   }
-	.main-nav__item {
-		border: none;
-		background-color: transparent;
-		line-height: 110px;
-		@include font(18px);
-		&:last-child {
-			padding-right: 0;
-		}
-	}
+  .main-nav__item {
+    border: none;
+    background-color: transparent;
+    line-height: 110px;
+    @include font(18px);
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 
 }

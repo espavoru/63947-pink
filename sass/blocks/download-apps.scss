@@ -3,15 +3,15 @@
   width: auto;
   height: 733px;
   padding-bottom: 271px;
-  background:  url('../img/iphone-hand-mobile@1x.png') left 176px no-repeat,
-               url('../img/bg-back-mobile@1x.jpg') center top no-repeat,
+  background: url('../img/iphone-hand-mobile@1x.png') left 176px no-repeat,
+              url('../img/bg-back-mobile@1x.jpg') center top no-repeat,
                 #1d2631;
 }
 .download-apps__wrapper {
   position: absolute;
   top: 66%;
   left: 50%;
-	overflow: auto;
+  overflow: auto;
   @include container;
   margin-left: -160px;
 
