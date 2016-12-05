@@ -1,15 +1,29 @@
-.picture-users__title {
-  @include font;
-  line-height: 30px;
-  text-align: center;
-  color: #283645;
+.picture-users {
+  @include clearfix;
 }
 .picture-users__item {
   margin-bottom: 20px;
+}
+.picture-users__item-wrapper {
+  @include container;
+}
+.picture-users__items-wrapper {
+  @include container;
+
+  & .picture-users__item {
+    @media ($tablet) {
+      width: 290px;
+      height: 455px;
+      float: left;
+    }
+
+  }
 }
 .picture-users__appeal {
   padding: 45px 30px;
   @include font;
   line-height: 30px;
   text-align: center;
+  @include clearfix;
+  clear: both;
 }

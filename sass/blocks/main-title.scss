@@ -1,6 +1,11 @@
 .main-title {
-  overflow: hidden;
+  // overflow: hidden;
   background: url('../img/bg-back-mobile@1x.jpg') center top no-repeat;
+  @include clearfix;
+
+  @media ($desctop) {
+    padding-top: 100px;
+  }
 }
 .main-title__wrapper {
   @include container;

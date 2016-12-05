@@ -1,6 +1,12 @@
 .photo-edit__form {
   padding: 20px 18px;
   background-color: #f2f2f2;
+  @include clearfix;
+}
+.photo-edit__picture {
+  @media ($tablet) {
+    float: left;
+  }
 }
 .photo-edit__buttons {
   padding: 41px 0 21px;
