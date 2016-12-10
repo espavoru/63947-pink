@@ -1,23 +1,35 @@
 .download-apps {
   position: relative;
   width: auto;
-  height: 733px;
+  height: 732px;
   padding-bottom: 271px;
   background: url('../img/iphone-hand-mobile@1x.png') left 176px no-repeat,
               url('../img/bg-back-mobile@1x.jpg') center top no-repeat,
-                #1d2631;
+              #1d2631;
+
+  @media ($tablet) {
+    height: auto;
+    padding-top: 201px;
+    padding-bottom: 93px;
+  }
+  @media ($desctop) {
+    padding-top: 218px;
+    padding-bottom: 86px;
+  }
 }
 .download-apps__wrapper {
+  @include container-fluid;
+}
+.download-apps__items-wrapper {
   position: absolute;
-  top: 66%;
+  top: 470px;
   left: 50%;
-  overflow: auto;
-  @include container;
-  margin-left: -160px;
+  width: 280px;
+  margin-left: -140px;
 
   @media ($tablet) {
     position: static;
-    width: 340px;
+    width: 300px;
     margin: 0;
   }
 }
@@ -25,9 +37,17 @@
   @include font(0);
 
   @media ($tablet) {
+    width: 191px;
+    margin: 0 auto;
     @include font(40px, 300);
     text-align: center;
+    line-height: 48px;
     color: #fff;
+  }
+  @media ($desctop) {
+    width: 237px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 .download-apps__btn {
@@ -41,14 +61,28 @@
   @include font(18px, 700);
   text-align: center;
   line-height: 49px;
+
+  @media ($tablet) {
+    width: 100%;
+    margin: 31px auto;
+  }
+  @media ($desctop) {
+    margin: 52px auto;
+    font-size: 21px;
+  }
 }
 .download-apps__items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 64.0625%;
+  width: 73.5%;
   margin: 0 auto;
-  padding: 0;
+  padding: 13px 0;
+
+  @media ($tablet) {
+    width: 69.5%;
+    padding: 15px 0;
+  }
 }
 .download-apps__item {
   display: inline-block;
@@ -58,10 +92,20 @@
   display: block;
 }
 .download-apps__descriptions {
-  width: 76%;
+  width: 83%;
   margin: 0 auto;
+  padding: 5px 0;
   text-align: center;
   @include font(14px, 300);
   line-height: 24px;
   color: #fff;
+
+  @media ($tablet) {
+    width: auto;
+    margin: 12px 0;
+    font-size: 18px;
+  }
+  @media ($desctop) {
+    margin: 31px 0;
+  }
 }

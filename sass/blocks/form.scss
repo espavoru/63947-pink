@@ -1,12 +1,12 @@
 .form {
   display: flex;
   flex-wrap: wrap;
-  @media (min-width: 660px) {
+  @media ($tablet) {
     width: 620px;
     margin: 0 auto;
     padding: 0 20px;
   }
-  @media (min-width: 996px) {
+  @media ($desctop) {
       width: 960px;
       padding: 0 10px;
   }

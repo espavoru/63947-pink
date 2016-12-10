@@ -4,6 +4,10 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+
+  @media ($tablet) {
+    margin-bottom: -109px;
+  }
 }
 .page-header__wrapper {
   padding: 0;
@@ -18,9 +22,13 @@
   }
 }
 .page-header__logo {
-  padding: 22px 0 26px 20px;
+  padding: 22px 0 21px 20px;
   border-bottom: 1px solid #000;
   background-color: #283645;
+
+  @media ($tablet) {
+    padding-bottom: 61px;
+  }
 }
 
 @media ($desctop) {
@@ -43,5 +51,4 @@
       padding-right: 0;
     }
   }
-
 }

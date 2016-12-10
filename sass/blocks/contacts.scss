@@ -1,34 +1,109 @@
 .contacts {
   text-align: center;
-}
-.contacts__items {
-  padding: 35px;
-}
-.contacts__item-wrapper {
-  display: inline-block;
+  padding-top: 22px;
 
   @media ($tablet) {
-    width: 284px;
+    padding-top: 46px;
   }
   @media ($desctop) {
-    width: 300px;
+    padding-top: 64px;
   }
 }
-.contacts__title-descriptions {
-  padding-top: 45px;
+.contacts__wrapper {
+  @include container-fluid;
+  padding-bottom: 20px;
+
+  @media ($tablet) {
+    padding-bottom: 19px;
+  }
+}
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+
+  @media ($tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.contacts__item-wrapper {
+  padding-top: 3px;
+  padding-bottom: 8px;
+
+  @media ($tablet) {
+    width: 45%;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+  @media ($desctop) {
+    width: 290px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.contacts__item-wrapper:nth-child(2) {
+  @media ($desctop) {
+    order: 2;
+  }
+}
+.contacts__item-wrapper:last-child {
+  @media ($desctop) {
+    order: 1;
+  }
+}
+.contacts__title {
+  margin-bottom: 17px;
   @include font(24px, 300);
   color: #283645;
+  line-height: 29px;
+
+  @media ($tablet) {
+    width: 370px;
+    margin: 0 auto 17px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @media ($desctop) {
+    width: 475px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 .contacts__item-title {
+  margin-top: 16px;
+  margin-bottom: 4px;
   @include font(18px, 700);
   color: #283645;
+
+  @media ($tablet) {
+    margin-bottom: 8px;
+  }
+  @media ($desctop) {
+    margin-bottom: 26px;
+  }
 }
 .contacts__item-link {
   @include font(24px, 300);
   color: #d22856;
 }
+.contacts svg {
+  width: 100%;
+}
+.contacts polygon {
+  fill: #fff;
+}
 .contacts__map {
   width: 100%;
   height: 200px;
-  background: url('../img/bg-map-mobile@1x.png') center bottom no-repeat;
+  margin-top: -50px;
+  background: url('../img/bg-map-mobile@1x.png') center bottom/cover no-repeat;
+
+  @media ($tablet) {
+    height: 375px;
+    margin-top: -72px;
+  }
+  @media ($desctop) {
+    height: 489px;
+  }
 }
