@@ -1,18 +1,28 @@
 .main-title {
-  // overflow: hidden;
-  background: url('../img/bg-back-mobile@1x.jpg') center top no-repeat;
-  @include clearfix;
+  padding-top: 79px;
+  padding-bottom: 38px;
+  background: url('../img/bg-back-mobile@1x.jpg') center top/cover no-repeat;
 
+  @media ($tablet) {
+    padding-top: 144px;
+    padding-bottom: 47px;
+  }
   @media ($desctop) {
-    padding-top: 100px;
+    padding-top: 139px;
+		padding-bottom: 68px;
   }
 }
 .main-title__wrapper {
-  @include container;
+  @include container-fluid;
 }
 .main-title__header {
-  padding-top: 100px;
   @include font(24px, 300);
   text-align: center;
   color: #fff;
+  line-height: 29px;
+
+  @media ($tablet) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

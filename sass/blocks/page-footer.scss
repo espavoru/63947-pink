@@ -1,27 +1,32 @@
 .page-footer {
-  padding: 40px;
 
   @media ($tablet) {
     display: block;
-    padding: 35px 0;
+    padding: 35px 0 34px;
   }
   @media ($desctop) {
-    padding: 70px 0;
+    // padding: 70px 0;
+    padding: 20px 0 69px;
   }
 }
 .page-footer__wrapper {
   @include container-fluid;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media ($tablet) {
+    flex-direction: row;
+  }
 }
 .page-footer__item {
   @media ($tablet) {
-    display: inline-block;
+    // display: inline-block;
   }
 }
 .page-footer__logo {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   text-align: center;
 
   @media ($tablet) {
