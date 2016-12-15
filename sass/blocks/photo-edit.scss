@@ -1,22 +1,96 @@
-.photo-edit__form {
-  padding: 20px 18px;
+.photo-edit {
   background-color: #f2f2f2;
-  @include clearfix;
-}
-.photo-edit__picture {
-  @media ($tablet) {
-    float: left;
+
+  @include tablet-up {
+    padding-top: 57px;
+    padding-bottom: 50px;
+  }
+  @include desctop-up {
+    padding: 0;
+    background-color: transparent;
   }
 }
+.photo-edit__form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+
+  @include tablet-up {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 404px;
+    @include container-fluid;
+  }
+  @include desctop-up {
+    height: 514px;
+    margin-bottom: 78px;
+    padding-top: 57px;
+    background-color: #f2f2f2;
+  }
+}
+.photo-edit__picture {
+  @include container-fluid;
+  text-align: center;
+
+  @include tablet-up {
+    width: 300px;
+  }
+  @include desctop-up {
+    margin-left: 80px;
+  }
+}
+.photo-edit__toggles {
+  @include container-fluid;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dddfe0;
+
+  @include tablet-up {
+    width: 52%;
+    border: none;
+  }
+  @include desctop-up {
+    margin-right: 60px;
+  }
+}
+.photo-edit__form-range {
+  width: 100%;
+  margin-top: 28px;
+}
+
 .photo-edit__buttons {
-  padding: 41px 0 21px;
+  @include container-fluid;
+  padding-top: 38px;
+  padding-bottom: 21px;
+
+  @include tablet-up {
+    width: 260px;
+    margin: 56px 15px 0 auto;
+  }
+  @include desctop-up {
+    display: flex;
+    justify-content: space-between;;
+    width: 410px;
+    margin-top: 135px;
+    margin-left: 84px;
+  }
 }
 .photo-edit__form-submit {
   margin-bottom: 12px;
   color: #d22856;
   border-color: #d22856;
+
+  @include tablet-up {
+    margin-bottom: 24px;
+  }
+  @include desctop-up {
+    width: 183px;
+  }
 }
 .photo-edit__form-reset {
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
+
+  @include desctop-up {
+    width: 183px;
+  }
 }

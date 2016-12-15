@@ -380,7 +380,6 @@ input[type="radio"]:checked + label:after {
 }
 .form__user-comment + .form__item {
   flex-direction: column;
-  margin-bottom: 40px;
 
   @media ($tablet) {
     margin-bottom: 50px;

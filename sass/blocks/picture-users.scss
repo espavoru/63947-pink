@@ -1,29 +1,216 @@
 .picture-users {
-  @include clearfix;
+  margin-top: 32px;
+
+  @media ($tablet) {
+    margin-top: 25px;
+  }
+  @include desctop-up {
+    margin-top: 43px;
+  }
 }
 .picture-users__item {
-  margin-bottom: 20px;
+
+  @include tablet-up {
+    flex-basis: 48.4%;
+  }
+  @include desctop-up {
+    flex-basis: 31.9%;
+  }
 }
 .picture-users__item-wrapper {
-  @include container;
+  width: 87.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 19px 17px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    @include container-fluid;
+  }
+}
+.picture-users__item--panarama-day {
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+}
+.picture-users__item-wrapper--panarama-day {
+
+  @include tablet-up {
+    margin-top: 227px;
+    padding: 24px 27px 17px;
+    margin-bottom: 50px;
+  }
+  @include desctop-up {
+    margin-top: 96px;
+    margin-bottom: 49px;
+    padding-right: 30px;
+  }
+}
+.picture-users__item-wrapper--panarama-day .picture-users__likes-btn {
+  @include tablet-up {
+    order: 1;
+    width: 17px;
+    margin-left: 15px;
+  }
+}
+.picture-users__item-wrapper--panarama-day .picture-users__likes-text {
+  @include tablet-up {
+    margin-left: auto;
+    padding-top: 0;
+  }
+}
+.picture-users__item-wrapper--panarama-day .picture-users__likes-count {
+  @include tablet-up {
+    padding-top: 0;
+  }
+}
+.picture-users__item--panarama-day b {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  padding: 11px 20px 12px 19px;
+  @include font(12px, 700);
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $accent-color;
+
+  @media ($tablet) {
+    top: 57px;
+  }
+
+  @include desctop-up {
+    top: 54px;
+    right: 10px;
+  }
+}
+.picture-users__item--panarama-day .user-likes__btn {
+  @include tablet-up {
+    order: 1;
+    margin-left: 14px;
+    padding: 0 9px;
+  }
+}
+.picture-users__item--panarama-day .user-likes__text {
+  @include tablet-up {
+    margin-left: auto;
+    padding-top: 1px;
+  }
+}
+.picture-users__item--panarama-day .user-likes__count {
+  @include tablet-up {
+    padding-top: 1px;
+  }
+}
+.picture-users__item p {
+  flex-basis: 100%;
+  margin: 1px 0 8px;
+  @include font;
+  line-height: 24px;
+}
+.picture-users__item--panarama-day p {
+  @include tablet-up {
+    order: 2;
+    margin-top: -1px;
+  }
 }
 .picture-users__items-wrapper {
-  @include container;
+  @include container-fluid;
 
-  & .picture-users__item {
-    @media ($tablet) {
-      width: 290px;
-      height: 455px;
-      float: left;
-    }
-
+  @include tablet-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .picture-users__appeal {
-  padding: 45px 30px;
+  padding: 23px 0 42px;
   @include font;
   line-height: 30px;
   text-align: center;
-  @include clearfix;
-  clear: both;
+
+  @include tablet-up {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    font-size: 18px;
+  }
+  @include desctop-up {
+    padding-top: 95px;
+    padding-bottom: 66px;
+  }
+}
+.picture-users__appeal-wrapper {
+  @include container-fluid;
+}
+.picture-users__appeal p {
+  margin: 0;
+}
+.picture-users__description-name {
+  @include font(14px, 700);
+  font-style: normal;
+  line-height: 22px;
+}
+.picture-users__description-pos-time {
+  padding: 0 4px;
+  @include font(12px, 300);
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.picture-users__image {
+  width: 100%;
+  margin-bottom: -3px;
+  text-align: center;
+
+  @include tablet-up {
+    height: 300px;
+  }
+}
+.picture-users__image--panarama-day {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: -3px;
+}
+.picture-users__likes-btn {
+  width: 15px;
+  border: none;
+  background: url('../img/icon-heart.svg') center no-repeat;
+
+  @include tablet-up {
+    height: 21px;
+    order: 1;
+    margin-left: auto;
+  }
+}
+.picture-users__likes-text {
+  padding-top: 3px;
+  padding-left: 17px;
+  padding-right: 3px;
+  @include font(12px);
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.picture-users__likes-count {
+  padding-top: 3px;
+  @include font(12px);
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.picture-users__info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 19px 17px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    flex-basis: 48.4%;
+    padding: 25px 27px 24px;
+  }
+  @include desctop-up {
+    padding-top: 126px;
+  }
 }

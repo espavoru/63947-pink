@@ -1,5 +1,6 @@
 .main-description {
   padding-top: 31px;
+  padding-bottom: 5px;
 }
 .main-description__wrapper {
   @include container-fluid;
@@ -19,8 +20,16 @@
     margin-bottom: 40px;
   }
 }
+.main-description br {
+
+  @media ($tablet) {
+    display: none;
+  }
+  @include desctop-up {
+    display: inline;
+  }
+}
 .main-description__wrapper span {
-  @include font(0);
 
   @media ($tablet) {
     @include font(18px);

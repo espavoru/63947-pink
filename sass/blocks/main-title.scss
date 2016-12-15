@@ -1,13 +1,16 @@
 .main-title {
+  min-height: 236px;
   padding-top: 79px;
   padding-bottom: 38px;
   background: url('../img/bg-back-mobile@1x.jpg') center top/cover no-repeat;
 
   @media ($tablet) {
+    min-height: 438px;
     padding-top: 144px;
     padding-bottom: 47px;
   }
   @media ($desctop) {
+    min-height: auto;
     padding-top: 139px;
 		padding-bottom: 68px;
   }
