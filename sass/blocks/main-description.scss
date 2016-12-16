@@ -10,28 +10,28 @@
 .main-description__wrapper p {
   margin-bottom: 12px;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 80%;
-    margin: 61px auto 46px;
+    margin: 61px auto 40px;
     font-size: 18px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 85%;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+  }
+}
+.main-description__wrapper .hidden {
+
+  @include tablet-up {
+    display: inline;
   }
 }
 .main-description br {
 
-  @media ($tablet) {
+  @include tablet-up {
     display: none;
   }
   @include desctop-up {
     display: inline;
-  }
-}
-.main-description__wrapper span {
-
-  @media ($tablet) {
-    @include font(18px);
   }
 }
