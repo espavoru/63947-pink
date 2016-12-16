@@ -1,6 +1,7 @@
 @import "normalize.scss";
 
-@import "mixins.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 @import "global/fonts.scss";
 @import "global/global.scss";
@@ -10,8 +11,11 @@
 @import "blocks/cost.scss";
 @import "blocks/download-apps.scss";
 @import "blocks/edit-photo.scss";
+@import "blocks/effect.scss";
 @import "blocks/form.scss";
+@import "blocks/main-description.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/main-title.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/photo-edit.scss";
@@ -20,9 +24,3 @@
 @import "blocks/slider.scss";
 @import "blocks/social-item.scss";
 @import "blocks/social-link.scss";
-@import "blocks/top-background.scss";
-@import "blocks/user-descrioption.scss";
-@import "blocks/user-likes.scss";
-@import "blocks/user-info.scss";
-@import "blocks/user-picture.scss";
-@import "blocks/visually-hidden.scss";

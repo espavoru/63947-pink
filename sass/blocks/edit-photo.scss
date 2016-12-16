@@ -1,0 +1,77 @@
+.edit-photo {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 86%;
+  margin: auto;
+  padding-top: 37px;
+  padding-bottom: 46px;
+
+  @include tablet-up {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+  }
+  @include desctop-up {
+    width: 84%;
+  }
+}
+.edit-photo__item-wrap {
+  @include tablet-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dddfe0;
+    width: 100%;
+    padding: 0px 20px 7px 0;
+    margin-bottom: 14px;
+  }
+}
+.edit-photo__item {
+  order: -1;
+  width: 48px;
+  height: 48px;
+
+  @include tablet-up {
+    order: 0;
+    margin-right: 17px;
+  }
+  @include desctop-up {
+    margin-right: 45px;
+    padding-right: 30px;
+  }
+}
+.edit-photo__item svg {
+
+  @include tablet-up {
+    width: 24px;
+  }
+  @include desctop-up {
+    width: auto;
+  }
+
+}
+.edit-photo__item + input {
+  display: none;
+
+  @include tablet-up {
+    display: inline;
+    margin-top: 0;
+  }
+}
+.edit-photo__item--active + input {
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @include tablet-up {
+    position: static;
+  }
+}
+.edit-photo__crop {
+  // width: 40px;
+  // height: 40px;
+}

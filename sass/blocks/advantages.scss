@@ -1,27 +1,104 @@
 .advantages {
   text-align: center;
 }
-.advantages__header {
-  padding-top: 46px;
+.advantages__header-wrapper {
+  @include container-fluid;
 }
-.advantages__items {
-  background: url('../img/iphone-screen-mobile@1x.png') center bottom no-repeat, #f2f2f2;
-  & p {
-    @include font;
-    line-height: 24px;
-    color: #283645;
+.advantages__header {
+  padding-top: 12px;
+  padding-bottom: 4px;
+
+  @media ($tablet) {
+    padding-top: 49px;
+    padding-bottom: 47px;
+  }
+  @media ($desctop) {
+    padding-top: 67px;
+    padding-bottom: 87px;
   }
 }
-.advantages__title-item {
-  padding-bottom: 30px;
+.advantages__title {
   @include font(24px, 300);
   color:  #283645;
+  margin: 28px 0;
+  line-height: 29px;
+
+  @media ($tablet) {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    &:last-child {
+      width: 335px;
+      margin: 0 auto;
+    }
+  }
+  @media ($desctop) {
+    font-size: 50px;
+    line-height: 60px;
+    &:last-child {
+      width: 420px;
+    }
+  }
 }
 .advantages__items {
-  padding: 50px 23px 350px;
+  padding: 71px 0 340px;
+  background: url('../img/iphone-screen-mobile@1x.png') center bottom no-repeat, #f2f2f2;
+
+  @media ($tablet) {
+    padding-top: 63px;
+    padding-bottom: 20px;
+    background: url('../img/iphone-screen-mobile@1x.png') 4% bottom no-repeat, #f2f2f2;
+  }
+}
+.advantages__items-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include container-fluid;
+
+  @media ($tablet) {
+    width: 46.9696%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: left;
+  }
+  @media ($desctop) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 271px;
+    text-align: center;
+  }
+}
+.advantages__item-wrapper {
+  @media ($desctop) {
+    width: 238px;
+  }
 }
 .advantages__item {
-
   @include font(18px, 700);
+  line-height: 23px;
+  margin: 12px 0;
+
+  @media ($desctop) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+.advantages__items p {
+  @include font;
   line-height: 24px;
+  color: #283645;
+  margin: 12px 0 20px;
+
+  @media ($tablet) {
+    margin-bottom: 23px;
+  }
+  @media ($desctop) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 24px;
+  }
 }

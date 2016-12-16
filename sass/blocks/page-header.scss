@@ -1,15 +1,54 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  margin-bottom: -66px;
   width: 100%;
-  height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
-  @include clearfix;
+  z-index: 1;
+
+  @media ($tablet) {
+    margin-bottom: -109px;
+  }
+}
+.page-header__wrapper {
+  padding: 0;
+  @media ($tablet) {
+    width: auto;
+    padding: 0;
+  }
+  @media ($desctop) {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 }
 .page-header__logo {
-  float: left;
-  margin: 22px 0 0 20px;
-  width: 75px;
-  height: 22px;
+  padding: 22px 0 21px 20px;
+  border-bottom: 1px solid #000;
+  background-color: #283645;
+
+  @media ($tablet) {
+    padding-bottom: 61px;
+  }
+}
+
+@media ($desctop) {
+  .page-header {
+    height: 110px;
+    margin-bottom: -110px;
+  }
+  .page-header__logo {
+    float: left;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+  }
+  .main-nav__item {
+    border: none;
+    background-color: transparent;
+    line-height: 110px;
+    @include font(18px);
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
