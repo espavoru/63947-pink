@@ -18,7 +18,7 @@
   @include tablet-up {
     flex-direction: column;
     flex-wrap: wrap;
-		align-items: center;
+    align-items: center;
     height: 404px;
     @include container-fluid;
   }
@@ -161,7 +161,7 @@
   border-color: #d22856;
 
   @include tablet-up {
-		margin-top: 56px;
+    margin-top: 56px;
     margin-bottom: 24px;
     margin-left: 6%;
   }
