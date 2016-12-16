@@ -8,11 +8,11 @@
   padding-top: 12px;
   padding-bottom: 4px;
 
-  @media ($tablet) {
+  @include tablet-up {
     padding-top: 49px;
     padding-bottom: 47px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     padding-top: 67px;
     padding-bottom: 87px;
   }
@@ -23,7 +23,7 @@
   margin: 28px 0;
   line-height: 29px;
 
-  @media ($tablet) {
+  @include tablet-up {
     font-size: 40px;
     line-height: 48px;
     margin: 0;
@@ -32,7 +32,7 @@
       margin: 0 auto;
     }
   }
-  @media ($desctop) {
+  @include desctop-up {
     font-size: 50px;
     line-height: 60px;
     &:last-child {
@@ -44,10 +44,10 @@
   padding: 71px 0 340px;
   background: url('../img/iphone-screen-mobile@1x.png') center bottom no-repeat, #f2f2f2;
 
-  @media ($tablet) {
+  @include tablet-up {
     padding-top: 63px;
     padding-bottom: 20px;
-    background: url('../img/iphone-screen-mobile@1x.png') 4% bottom no-repeat, #f2f2f2;
+    background: #f2f2f2;
   }
 }
 .advantages__items-wrapper {
@@ -56,14 +56,14 @@
 
   @include container-fluid;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 46.9696%;
     margin: 0;
     margin-left: auto;
     margin-right: 20px;
     text-align: left;
   }
-  @media ($desctop) {
+  @include desctop-up {
     flex-direction: row;
     justify-content: space-around;
     width: 960px;
@@ -73,7 +73,7 @@
   }
 }
 .advantages__item-wrapper {
-  @media ($desctop) {
+  @include desctop-up {
     width: 238px;
   }
 }
@@ -82,7 +82,7 @@
   line-height: 23px;
   margin: 12px 0;
 
-  @media ($desctop) {
+  @include desctop-up {
     font-size: 30px;
     line-height: 30px;
   }
@@ -93,10 +93,10 @@
   color: #283645;
   margin: 12px 0 20px;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-bottom: 23px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     font-size: 18px;
     line-height: 30px;
     margin-top: 24px;
