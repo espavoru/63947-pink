@@ -4,15 +4,17 @@
   height: 732px;
   padding-bottom: 271px;
   background: url('../img/iphone-hand-mobile@1x.png') left 176px no-repeat,
-              url('../img/bg-back-mobile@1x.jpg') center top no-repeat,
+              url('../img/bg-back-mobile@1x.jpg') center top/cover no-repeat,
               #1d2631;
 
-  @media ($tablet) {
+  @include tablet-up {
     height: auto;
     padding-top: 201px;
     padding-bottom: 93px;
+    background: url('../img/bg-back-mobile@1x.jpg') center top/cover no-repeat,
+                #1d2631;
   }
-  @media ($desctop) {
+  @include desctop-up {
     padding-top: 218px;
     padding-bottom: 86px;
   }
@@ -27,7 +29,7 @@
   width: 280px;
   margin-left: -140px;
 
-  @media ($tablet) {
+  @include tablet-up {
     position: static;
     width: 300px;
     margin: 0;
@@ -36,7 +38,7 @@
 .download-apps__title {
   @include font(0);
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 191px;
     margin: 0 auto;
     @include font(40px, 300);
@@ -44,7 +46,7 @@
     line-height: 48px;
     color: #fff;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 237px;
     font-size: 50px;
     line-height: 60px;
@@ -62,11 +64,11 @@
   text-align: center;
   line-height: 49px;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 100%;
     margin: 31px auto;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin: 52px auto;
     font-size: 21px;
   }
@@ -79,7 +81,7 @@
   margin: 0 auto;
   padding: 13px 0;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 69.5%;
     padding: 15px 0;
   }
@@ -100,12 +102,12 @@
   line-height: 24px;
   color: #fff;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: auto;
     margin: 12px 0;
     font-size: 18px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin: 31px 0;
   }
 }

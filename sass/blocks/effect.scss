@@ -13,13 +13,14 @@
   }
 }
 .effect__wrap {
-  width: 46.1%;
-  margin-right: 4.1%;
-  margin-left: auto;
+  @include container-fluid;
 
-  @media ($desctop) {
-    width: 520px;
-    margin-right: 64px;
+  @include tablet-up {
+    padding-left: 47%;
+  }
+  @include desctop-up {
+    padding-left: 366px;
+    padding-right: 25px;
   }
 }
 .effect__title {

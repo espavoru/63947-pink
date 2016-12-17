@@ -2,10 +2,10 @@
   margin-top: 32px;
 
   @media ($tablet) {
-    margin-top: 25px;
+    margin-top: 31px;
   }
   @include desctop-up {
-    margin-top: 43px;
+    margin-top: 48px;
   }
 }
 .picture-users__item {
