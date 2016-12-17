@@ -521,7 +521,7 @@ fieldset {
     .advantages__items {
       padding-top: 63px;
       padding-bottom: 20px;
-      background: url("../img/iphone-screen-mobile@1x.png") 4% bottom no-repeat, #f2f2f2; } }
+      background: #f2f2f2; } }
 
 .advantages__items-wrapper {
   display: -ms-flexbox;
@@ -700,7 +700,7 @@ fieldset {
   @media (min-width: 660px) {
     .contacts__map {
       height: 375px;
-      margin-top: -72px; } }
+      margin-top: 0; } }
   @media (min-width: 960px) {
     .contacts__map {
       height: 489px; } }
@@ -858,12 +858,13 @@ fieldset {
   width: auto;
   height: 732px;
   padding-bottom: 271px;
-  background: url("../img/iphone-hand-mobile@1x.png") left 176px no-repeat, url("../img/bg-back-mobile@1x.jpg") center top no-repeat, #1d2631; }
+  background: url("../img/iphone-hand-mobile@1x.png") left 176px no-repeat, url("../img/bg-back-mobile@1x.jpg") center top/cover no-repeat, #1d2631; }
   @media (min-width: 660px) {
     .download-apps {
       height: auto;
       padding-top: 201px;
-      padding-bottom: 93px; } }
+      padding-bottom: 93px;
+      background: url("../img/bg-back-mobile@1x.jpg") center top/cover no-repeat, #1d2631; } }
   @media (min-width: 960px) {
     .download-apps {
       padding-top: 218px;
