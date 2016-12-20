@@ -1,23 +1,36 @@
 .reviews {
-  margin-top: -42px;
+  position: relative;
+  margin-top: -45px;
   padding-top: 42px;
   padding-bottom: 42px;
   text-align: center;
   background-color: #fff;
 
-  @media ($tablet) {
-    padding-top: 83px;
-    padding-bottom: 57px;
+  @include tablet-up {
+    padding-top: 21px;
+    padding-bottom: 20px;
   }
-  @media ($desctop) {
+  @include desctop-up {
+		margin-top: 0;
     padding-top: 167px;
     padding-bottom: 49px;
+
+    &::before {
+      position: absolute;
+      top: 71px;
+      left: 50%;
+      content: '';
+      width: 80px;
+      height: 65px;
+      background: url('../img/icon-quotes.svg') no-repeat;
+      transform: translateX(-50%);
+    }
   }
 }
 .reviews__wrapper {
   @include container-fluid;
 
-  @media ($tablet) {
+  @include tablet-up {
     padding-top: 0;
   }
 }
@@ -30,7 +43,7 @@
   padding: 0;
   list-style: none;
 
-  @media ($desctop) {
+  @include desctop-up {
     &::before {
       content: '';
       position: absolute;
@@ -66,7 +79,7 @@
     display: none;
   }
 
-  @media ($desctop) {
+  @include desctop-up {
     width: 690px;
     margin: auto;
   }
@@ -82,11 +95,11 @@
     content: '»';
   }
 
-  @media ($tablet) {
+  @include tablet-up {
     @include font(18px);
     line-height: 30px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     &::before,
     &::after {
       display: none;
@@ -99,12 +112,12 @@
   line-height: 30px;
   color: #000;
 
-  @media ($tablet) {
+  @include tablet-up {
     order: 0;
     margin: 17px 0 9px;
     font-size: 20px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     font-size: 24px;
     margin-top: 18px;
     margin-bottom: 2px;
@@ -113,17 +126,33 @@
 .reviews__item-description {
   @include font(0);
 
-  @media ($tablet) {
+  @include tablet-up {
     @include font;
   }
-  @media ($desctop) {
+  @include desctop-up {
     font-size: 18px;
     line-height: 30px;
   }
 }
 .reviews__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
 
-  @media ($desctop) {
+	@include tablet-up {
+		margin-top: 41px;
+	}
+  @include desctop-up {
     display: none;
   }
+}
+.reviews__toggles .slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 9px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
 }

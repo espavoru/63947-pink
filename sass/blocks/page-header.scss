@@ -5,17 +5,21 @@
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-bottom: -109px;
+  }
+  @include desctop-up {
+    height: 110px;
+    margin-bottom: -110px;
   }
 }
 .page-header__wrapper {
   padding: 0;
-  @media ($tablet) {
+  @include tablet-up {
     width: auto;
     padding: 0;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 960px;
     margin: 0 auto;
     padding: 0 10px;
@@ -26,29 +30,16 @@
   border-bottom: 1px solid #000;
   background-color: #283645;
 
-  @media ($tablet) {
-    padding-bottom: 61px;
+  @include tablet-up {
+    padding-top: 27px;
+    padding-bottom: 39px;
   }
-}
 
-@media ($desctop) {
-  .page-header {
-    height: 110px;
-    margin-bottom: -110px;
-  }
-  .page-header__logo {
+  @include desctop-up {
     float: left;
+    padding-left: 0;
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
-  }
-  .main-nav__item {
-    border: none;
-    background-color: transparent;
-    line-height: 110px;
-    @include font(18px);
-    &:last-child {
-      padding-right: 0;
-    }
   }
 }
