@@ -12,6 +12,9 @@
 
   @include tablet-up {
     flex-basis: 48.4%;
+
+    display: flex;
+    flex-direction: column;
   }
   @include desctop-up {
     flex-basis: 31.9%;
@@ -20,14 +23,14 @@
 .picture-users__item-wrapper {
   width: 87.5%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
   padding: 19px 17px;
   background-color: #f2f2f2;
   margin-bottom: 20px;
 
   @include tablet-up {
     @include container-fluid;
+		display: flex;
+		flex-wrap: wrap;
   }
 }
 .picture-users__item--panarama-day {
@@ -38,17 +41,43 @@
 .picture-users__item-wrapper--panarama-day {
 
   @include tablet-up {
-    margin-top: 227px;
-    padding: 24px 27px 17px;
+    padding: 25px 27px 15px;
     margin-bottom: 50px;
   }
   @include desctop-up {
-    margin-top: 96px;
     margin-bottom: 49px;
     padding-right: 30px;
   }
 }
+.picture-users__panarama-baner-wrapper {
+  position: relative;
+  @include container-fluid;
+}
+.picture-users__panarama-baner-wrapper b {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 11px 20px 12px 19px;
+  @include font(12px, 700);
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $accent-color;
+  z-index: 1;
+
+  @media ($tablet) {
+    top: 57px;
+    right: 0;
+  }
+
+  @include desctop-up {
+    top: 54px;
+  }
+}
+.picture-users__item--panarama-day .picture-users__item-wrapper--panarama-day p {
+  margin-bottom: 10px;
+}
 .picture-users__item-wrapper--panarama-day .picture-users__likes-btn {
+
   @include tablet-up {
     order: 1;
     width: 17px;
@@ -59,30 +88,12 @@
   @include tablet-up {
     margin-left: auto;
     padding-top: 0;
+    padding-right: 3px;
   }
 }
 .picture-users__item-wrapper--panarama-day .picture-users__likes-count {
   @include tablet-up {
     padding-top: 0;
-  }
-}
-.picture-users__item--panarama-day b {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  padding: 11px 20px 12px 19px;
-  @include font(12px, 700);
-  color: #fff;
-  text-transform: uppercase;
-  background-color: $accent-color;
-
-  @media ($tablet) {
-    top: 57px;
-  }
-
-  @include desctop-up {
-    top: 54px;
-    right: 10px;
   }
 }
 .picture-users__item--panarama-day .user-likes__btn {
@@ -108,6 +119,10 @@
   margin: 1px 0 8px;
   @include font;
   line-height: 24px;
+
+  @include tablet-up {
+    margin-top: 0;
+  }
 }
 .picture-users__item--panarama-day p {
   @include tablet-up {
@@ -125,18 +140,18 @@
   }
 }
 .picture-users__appeal {
-  padding: 23px 0 42px;
+  padding: 19px 0 42px;
   @include font;
   line-height: 30px;
   text-align: center;
 
   @include tablet-up {
-    padding-top: 69px;
+    padding-top: 45px;
     padding-bottom: 69px;
     font-size: 18px;
   }
   @include desctop-up {
-    padding-top: 95px;
+    padding-top: 5px;
     padding-bottom: 66px;
   }
 }
@@ -161,10 +176,6 @@
   width: 100%;
   margin-bottom: -3px;
   text-align: center;
-
-  @include tablet-up {
-    height: 300px;
-  }
 }
 .picture-users__image--panarama-day {
   position: relative;
@@ -172,28 +183,42 @@
   height: auto;
   margin-bottom: -3px;
 }
+.picture-users__likes-wrapper {
+  padding-top: 3px;
+
+  @include tablet-up {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    padding: 0;
+  }
+}
 .picture-users__likes-btn {
   width: 15px;
+  height: 12px;
   border: none;
   background: url('../img/icon-heart.svg') center no-repeat;
 
   @include tablet-up {
+    width: 23px;
     height: 21px;
     order: 1;
     margin-left: auto;
   }
 }
 .picture-users__likes-text {
-  padding-top: 3px;
-  padding-left: 17px;
-  padding-right: 3px;
+  padding-left: 14px;
   @include font(12px);
   line-height: 24px;
   text-transform: uppercase;
   color: $accent-color;
+
+  @include tablet-up {
+    padding-left: 0;
+    padding-right: 3px;
+  }
 }
 .picture-users__likes-count {
-  padding-top: 3px;
   @include font(12px);
   line-height: 24px;
   text-transform: uppercase;
@@ -202,15 +227,17 @@
 .picture-users__info-wrapper {
   display: flex;
   flex-wrap: wrap;
+	min-height: 121px;
+	margin-bottom: 20px;
   padding: 19px 17px;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
 
   @include tablet-up {
+    min-height: 155px;
     flex-basis: 48.4%;
-    padding: 25px 27px 24px;
+    padding: 25px 27px 22px;
   }
   @include desctop-up {
-    padding-top: 126px;
+    margin-bottom: 54px;
   }
 }

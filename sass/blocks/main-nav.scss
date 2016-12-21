@@ -46,7 +46,14 @@
     float: left;
     width: auto;
     padding: 0 40px;
+    @include font(18px);
     text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    line-height: 110px;
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 @media ($mobile-device-only) {

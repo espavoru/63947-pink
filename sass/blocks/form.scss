@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media ($tablet) {
+  @include tablet-up {
     @include container-fluid;
   }
 }
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
 
-  @media ($tablet) {
+  @include tablet-up {
 
   }
 }
@@ -32,11 +32,11 @@
 .form__user-info {
   padding: 0px 6.25% 42px;
 
-  @media ($tablet) {
+  @include tablet-up {
     order: -3;
     padding: 0;
   }
-  @media ($desctop) {
+  @include desctop-up {
     flex-basis: 46.3%;
     padding-top: 20px;
     // padding-right: 35px;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
   color: #d22856;
 
-  @media ($tablet) {
+  @include tablet-up {
     padding: 43px 18px 42px 0;
   }
 }
@@ -71,28 +71,28 @@
   &::-moz-placeholder { color: #283645; }
   &::-webkit-input-placeholder { color: #283645; }
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 84%;
     flex-grow: 1;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 78%;
   }
 }
 .form__user-achievements {
-  margin-top: -75px;
-  padding: 17px 6.25% 21px;
+  position: relative;
+  padding: 91px 6.25% 21px;
   background-color: #f2f2f2;
 
-  @media ($tablet) {
-    margin-top: 57px;
-    padding: 22px 9.35% 27px;
+  @include tablet-up {
+    margin-top: 65px;
+    padding: 30px 9.35% 27px;
     flex-basis: 100%;
     background-color: transparent;
     border: 2px solid #e5e5e5;
   }
-  @media ($desctop) {
-    padding: 22px 0 34px 18px;
+  @include desctop-up {
+    padding: 30px 0 34px 18px;
 
   }
 }
@@ -102,25 +102,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media ($desctop) {
+  @include desctop-up {
     flex-direction: column;
     align-items: flex-end;;
     height: 164px;
   }
 }
 .form__user-achievements-title {
-  padding: 113px 16px 0;
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  width: 250px;
+  padding: 0 16px;
   @include font;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
+  transform: translateX(-50%);
 
-  @media ($tablet) {
-    padding: 0 6% 0;
-  }
-  @media ($desctop) {
-    padding: 0 4.2% 0;
+  @include tablet-up {
+    top: -10px;
+    width: 436px;
+    background-color: #fff;
   }
 }
 .form__user-achievements input {
@@ -144,10 +148,10 @@
     background-color: #fff;
   }
 
-  @media ($tablet) {
+  @include tablet-up {
     padding-left: 59px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 29%;
   }
 }
@@ -158,33 +162,36 @@ input[type="checkbox"]:checked + label:before {
 .form__user-contacts {
   padding: 15px 6.25% 42px;
 
-  @media ($tablet) {
-    margin-top: 57px;
-    padding: 37px 58px 0;
+  @include tablet-up {
+    position: relative;
+    margin-top: 65px;
+    padding: 45px 58px 0;
     order: -1;
     border: 2px solid #e5e5e5;
   }
-  @media ($desctop) {
-    margin-top: 31px;
-    padding-top: 34px;
+  @include desctop-up {
+    margin-top: 39px;
+    padding-top: 42px;
     flex-basis: 100%;
   }
 }
 .form__user-contacts-title {
   display: none;
 
-  @media ($tablet) {
-    display: table;
-    padding: 0 5.9%;
+  @include tablet-up {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    display: block;
+    width: 260px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     color: $accent-color;
-  }
-  @media ($desctop) {
-    padding: 0 3.9%;
+    background-color: #fff;
+    transform: translateX(-50%);
   }
 }
 .form__user-contacts label {
@@ -194,12 +201,12 @@ input[type="checkbox"]:checked + label:before {
   text-transform: uppercase;
   color: #d22856;
 
-  @media ($tablet) {
+  @include tablet-up {
     padding: 10px 0 29px 19px;
   }
 }
 .form__user-contacts label span {
-  @media ($tablet) {
+  @include tablet-up {
     display: none;
   }
 }
@@ -216,7 +223,7 @@ input[type="checkbox"]:checked + label:before {
   &::-moz-placeholder { color: #283645; }
   &::-webkit-input-placeholder { color: #283645; }
 
-  @media ($desctop) {
+  @include desctop-up {
     width: 45.7%;
   }
 }
@@ -226,58 +233,66 @@ input[type="checkbox"]:checked + label:before {
   justify-content: space-between;
 }
 .form__user-contacts input:first-of-type {
-  @media ($tablet) {
+  @include tablet-up {
     order: -1;
   }
 }
 .form__user-contacts label:last-of-type {
-  @media ($tablet) {
+  @include tablet-up {
     order: 1;
     padding-bottom: 26px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin-right: auto;
     padding-left: 59px;
     padding-bottom: 13px;
   }
 }
 .form__user-contacts label:first-of-type {
-  @media ($desctop) {
+  @include desctop-up {
     order: 1;
     margin-right: auto;
     padding-bottom: 13px;
   }
 }
 .form__user-apps {
-  margin-top: -75px;
-  padding: 16px 20px 25px;
+  position: relative;
+  padding: 90px 20px 25px;
   background-color: #f2f2f2;
 
-  @media ($tablet) {
-    margin-top: 31px;
+  @include tablet-up {
+    margin-top: 40px;
+    padding-top: 24px;
     padding-bottom: 46px;
     order: -2;
     background-color: transparent;
     border: 2px solid #e5e5e5;
   }
-  @media ($desctop) {
-    margin-top: 30px;
+  @include desctop-up {
+    margin-top: 38px;
     margin-bottom: 26px;
-    padding-top: 19px;
+    padding-top: 27px;
     padding-left: 36px;
     flex-basis: 46.3%;
   }
 }
 .form__user-apps-title {
-  padding: 113px 6.25% 0;
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  width: 250px;
   @include font;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
+  transform: translateX(-50%);
 
-  @media ($tablet) {
-    padding: 0 4.4%;
+  @include tablet-up {
+    top: -10px;
+    left: 50%;
+    width: 372px;
+    background-color: #fff;
   }
 }
 .form__user-apps input {
@@ -295,68 +310,72 @@ input[type="checkbox"]:checked + label:before {
     position: absolute;
     top: 19px;
     left: 0;
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
     background-color: #fff;
   }
 
-  @media ($tablet) {
+  @include tablet-up {
     padding: 32px 0 13px 97px;
 
     &::before {
-      top: 28px;
-      left: 38px;
+      top: 27px;
+      left: 37px;
     }
   }
-  @media ($desctop) {
+  @include desctop-up {
     padding: 32px 0 12px 97px;
   }
 }
-input[type="radio"]:checked + label:after {
+.form__input-radio:checked + label:after {
   content: '';
   position: absolute;
-  top: 30px;
-  left: 11px;
+  top: 31px;
+  left: 12px;
   width: 0px;
   height: 0px;
   border: 8px solid #d22856;
   border-radius: 50%;
 
-  @media ($tablet) {
+  @include tablet-up {
     top: 39px;
     left: 49px;
   }
 }
 .form__user-comment {
-  padding: 10px 6.25% 0;
+  position: relative;
+  padding: 72px 6.25% 0;
 
-  @media ($tablet) {
-    margin-top: 51px;
+  @include tablet-up {
+    margin-top: 65px;
     margin-bottom: 19px;
-    padding: 31px 58px 48px;
+    padding: 45px 58px 48px;
     border: 2px solid #e5e5e5;
   }
-  @media ($desctop) {
+  @include desctop-up {
     flex-basis: 100%;
-    padding-top: 28px;
+    padding-top: 42px;
     padding-bottom: 40px;
   }
 }
 .form__user-comment-title {
-  padding: 32px 6.25% 0;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  width: 250px;
   @include font;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
+  transform: translateX(-50%);
 
-  @media ($tablet) {
-    padding: 0 7.7%;
-  }
-  @media ($desctop) {
-    padding: 0 4.7%;
+  @include tablet-up {
+    top: -16px;
+    width: 260px;
+    background-color: #fff;
   }
 }
 .form__user-comment textarea {
@@ -371,17 +390,17 @@ input[type="radio"]:checked + label:after {
   border: 2px solid #e5e5e5;
   resize: none;
 
-  @media ($tablet) {
+  @include tablet-up {
     height: 193px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     height: 128px;
   }
 }
 .form__user-comment + .form__item {
   flex-direction: column;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-bottom: 50px;
     flex-direction: row;
     justify-content: space-between;
@@ -401,11 +420,11 @@ input[type="radio"]:checked + label:after {
   border-radius: 3px;
   background-color: #2aab6d;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 74%;
     margin-top: 48px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 37.3%;
     margin-top: 46px;
   }
@@ -418,14 +437,14 @@ input[type="radio"]:checked + label:after {
   text-transform: uppercase;
   text-align: center;
 
-  @media ($tablet) {
+  @include tablet-up {
     text-align: right;
   }
 }
 .form__descrioption-required-fields .hidden {
   display: none;
 
-  @media ($desctop) {
+  @include desctop-up {
     display: inline;
   }
 }

@@ -2,8 +2,8 @@
   background-color: #f2f2f2;
 
   @include tablet-up {
-    padding-top: 57px;
-    padding-bottom: 50px;
+    padding-top: 52px;
+    padding-bottom: 55px;
   }
   @include desctop-up {
     padding: 0;
@@ -16,16 +16,14 @@
   padding: 20px 0;
 
   @include tablet-up {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
     height: 404px;
     @include container-fluid;
   }
   @include desctop-up {
     height: 514px;
     margin-bottom: 78px;
-    padding-top: 57px;
+    padding-top: 52px;
     background-color: #f2f2f2;
   }
 }
@@ -34,14 +32,21 @@
   text-align: center;
 
   @include tablet-up {
-    width: 300px;
+    padding-top: 5px;
+    flex-basis: 50%;
+    text-align: left;
   }
   @include desctop-up {
     margin-left: 80px;
+    flex-basis: 40%;
   }
 }
 .photo-edit__picture img {
   width: 100%;
+
+  @include tablet-up {
+    width: 300px;
+  }
 }
 .photo-edit__toggles {
   @include container-fluid;
@@ -49,7 +54,7 @@
   border-bottom: 1px solid #dddfe0;
 
   @include tablet-up {
-    width: 52%;
+    width: 100%;
     border: none;
   }
   @include desctop-up {
@@ -86,7 +91,7 @@
     margin-top: -7px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
   }
   &:focus::-webkit-slider-thumb {
-    // background-color: $accent-color;
+    background-color: $accent-color;
   }
   &::-moz-range-thumb {
     border: 2px solid $accent-color;
@@ -104,23 +109,23 @@
     border-radius: 50%;
     background: #f2f2f2;
     cursor: pointer;
-    margin-top: -7px;
+    margin-top: -3px;
   }
   &::-webkit-slider-runnable-track {
     width: 100%;
-    height: 0;
+    height: 2px;
     cursor: pointer;
     border: 1px solid #283645;
   }
   &::-moz-range-track {
     width: 100%;
-    height: 0;
+    height: 2px;
     cursor: pointer;
     border: 1px solid #283645;
   }
   &::-ms-trac {
     width: 100%;
-    height: 0;
+    height: 2px;
     cursor: pointer;
     border: 1px solid #283645;
   }
@@ -145,12 +150,15 @@
   padding-bottom: 21px;
 
   @include tablet-up {
-    width: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 0;
   }
   @include desctop-up {
     display: flex;
-    justify-content: space-between;;
+    flex-wrap: nowrap;
     width: 438px;
     margin-top: 135px;
   }
@@ -161,12 +169,15 @@
   border-color: #d22856;
 
   @include tablet-up {
-    margin-top: 56px;
+    margin-top: 55px;
     margin-bottom: 24px;
-    margin-left: 6%;
+    margin-left: 12%;
+    margin-right: 4%;
   }
   @include desctop-up {
     width: 183px;
+    margin-right: 10%;
+    margin-left: 0;
     margin-top: 0;
   }
 }
@@ -175,9 +186,14 @@
   border-color: rgba(40, 54, 69, 0.1);
 
   @include tablet-up {
-    margin-left: 6%;
+    margin-left: 12%;
+    margin-right: 4%;
   }
   @include desctop-up {
     width: 183px;
+    margin-left: 0;
   }
+}
+.photo-edit__toggles-buttons-wrapper {
+  flex-basis: 50%;
 }

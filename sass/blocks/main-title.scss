@@ -2,17 +2,31 @@
   min-height: 236px;
   padding-top: 79px;
   padding-bottom: 38px;
-  background: url('../img/bg-back-mobile@1x.jpg') center top/cover no-repeat;
+  background: url('../img/bg-back-mobile@1x.jpg') center top no-repeat;
+
+  @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../img/bg-back-mobile@2x.jpg') center top no-repeat;
+  }
 
   @media ($tablet) {
     min-height: 438px;
     padding-top: 144px;
     padding-bottom: 47px;
+    background: url('../img/bg-back-tablet@1x.jpg') center top no-repeat;
+
+    @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../img/bg-back-tablet@2x.jpg') center top no-repeat;
+    }
   }
   @media ($desctop) {
     min-height: auto;
     padding-top: 139px;
     padding-bottom: 68px;
+    background: url('../img/bg-back-desktop@1x.jpg') center top no-repeat;
+
+    @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../img/bg-back-desktop@2x.jpg') center top no-repeat;
+    }
   }
 }
 .main-title__wrapper {

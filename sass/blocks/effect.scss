@@ -3,24 +3,62 @@
 
   @media ($tablet) {
     display: flex;
-    padding-top: 66px;
+    padding-top: 25px;
     padding-bottom: 66px;
   }
   @media ($desctop) {
-    padding-top: 87px;
-    padding-bottom: 156px;
+    padding-top: 42px;
+    padding-bottom: 65px;
     background-color: $bg-grey;
   }
 }
 .effect__wrap {
   @include container-fluid;
+  @include clearfix;
 
   @include tablet-up {
-    padding-left: 47%;
   }
   @include desctop-up {
-    padding-left: 366px;
     padding-right: 25px;
+  }
+}
+.effect__icon-wrapper {
+  float: left;
+  position: relative;
+  margin-left: 1px;
+
+  &::before {
+    position: absolute;
+    top: 130px;
+    left: 63px;
+    content: '24';
+    @include font(96px, 700);
+    color: $accent-color;
+
+    @include desctop-up {
+      top: 121px;
+      left: 79px;
+      font-size: 120px;
+    }
+  }
+
+}
+.effect__icon {
+  width: 238px;
+
+  @include desctop-up {
+    width: 298px;
+  }
+}
+.effect__description {
+  float: right;
+  width: 50%;
+  padding-top: 41px;
+  padding-right: 14px;
+
+  @include desctop-up {
+    width: 60%;
+    padding-top: 65px;
   }
 }
 .effect__title {

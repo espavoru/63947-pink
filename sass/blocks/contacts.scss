@@ -2,27 +2,30 @@
   text-align: center;
   padding-top: 22px;
 
-  @media ($tablet) {
+  @include tablet-up {
     padding-top: 46px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin-bottom: 50px;
     padding-top: 64px;
   }
 }
 .contacts__wrapper {
   @include container-fluid;
-  padding-bottom: 20px;
+  padding-bottom: 84px;
 
-  @media ($tablet) {
-    padding-bottom: 19px;
+  @include tablet-up {
+    padding-bottom: 13px;
   }
+	@include desctop-up {
+		padding-bottom: 12px;
+	}
 }
 .contacts__items {
   display: flex;
   flex-direction: column;
 
-  @media ($tablet) {
+  @include tablet-up {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -32,24 +35,24 @@
   padding-top: 3px;
   padding-bottom: 8px;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 45%;
     padding-top: 12px;
     padding-bottom: 20px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 290px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
 }
 .contacts__item-wrapper:nth-child(2) {
-  @media ($desctop) {
+  @include desctop-up {
     order: 2;
   }
 }
 .contacts__item-wrapper:last-child {
-  @media ($desctop) {
+  @include desctop-up {
     order: 1;
   }
 }
@@ -59,13 +62,13 @@
   color: #283645;
   line-height: 29px;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 370px;
     margin: 0 auto 17px;
     font-size: 40px;
     line-height: 48px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     width: 475px;
     font-size: 50px;
     line-height: 60px;
@@ -77,10 +80,10 @@
   @include font(18px, 700);
   color: #283645;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-bottom: 8px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin-bottom: 26px;
   }
 }
@@ -100,11 +103,25 @@
   margin-top: -50px;
   background: url('../img/bg-map-mobile@1x.png') center bottom/cover no-repeat;
 
-  @media ($tablet) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../img/bg-map-mobile@2x.jpg') center bottom/cover no-repeat;
+  }
+
+  @include tablet-up {
     height: 375px;
     margin-top: 0;
+    background: url('../img/bg-map-tablet@1x.jpg') center bottom/cover no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../img/bg-map-tablet@2x.jpg') center bottom/cover no-repeat;
+    }
   }
-  @media ($desctop) {
+  @include desctop-up {
     height: 489px;
+    background: url('../img/bg-map-desktop@1x.jpg') center bottom/cover no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url('../img/bg-map-desktop@2x.jpg') center bottom/cover no-repeat;
+    }
   }
 }

@@ -1,109 +1,157 @@
 .cost {
-  height: 485px;
+  // height: 485px;
   background-color: #f2f2f2;
   overflow: hidden;
 
-  @media ($tablet) {
+  @include tablet-up {
     height: auto;
-    padding-top: 89px;
     padding-bottom: 68px;
   }
-  @media ($desctop) {
-    padding-top: 140px;
+  @include desctop-up {
     padding-bottom: 95px;
   }
+}
+.cost__triangle-top {
+  width: 100%;
+  height: 100%;
 }
 .cost__wrapper {
   position: relative;
   @include container-fluid;
-  padding-top: 424px;
+  padding-top: 370px;
+  padding-bottom: 47px;
+
+  @include tablet-up {
+    margin-top: 34px;
+  }
+	@include desctop-up {
+		margin-top: 62px;
+	}
 }
-.cost-table {
+.cost__table {
   position: absolute;
-  top: 105px;
-  left: -297px;
-  width: 875px;
+  top: 63px;
+  left: -288px;
+  width: 867px;
   border-collapse: collapse;
 
-  @media ($tablet) {
+  @include tablet-up {
     position: static;
     width: 100%;
   }
 }
-.cost-table-header {
+.cost__table-header {
   line-height: 30px;
   color: #fff;
 }
-.cost-table-header th:nth-child(n+2) {
+.cost__table-header th:nth-child(n+2) {
   background-color: #283645;
   border: 2px solid #283645;
   border-right: 2px solid $bg-grey;
 }
-.cost-table-header p:first-child {
+.cost__table-header p:first-child {
   margin: 13px 0 0;
   @include font(18px, 700);
   text-transform: uppercase;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-top: 9px;
     font-size: 16px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin-top: 13px;
     font-size: 18px;
   }
 }
-.cost-table-header p:last-child {
+.cost__table-header p:last-child {
   margin: 2px 0 17px;
   @include font(24px, 300);
 
-  @media ($tablet) {
+  @include tablet-up {
     font-size: 18px;
     margin-top: -3px;
     margin-bottom: 7px;
   }
-  @media ($desctop) {
+  @include desctop-up {
     margin-top: 2px;
     margin-bottom: 17px;
     font-size: 24px;
   }
 }
-.cost-table-body td {
+.cost__table-body td {
   height: 61px;
   text-transform: uppercase;
   padding-left: 21px;
   border: 2px solid #e5e5e5;
   background-color: #fff;
+  line-height: 2;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 25%;
     height: 47px;
-    padding-left: 15px;
+    padding-left: 0;
   }
-  @media ($desctop) {
+  @include desctop-up {
     height: 61px;
-    padding-left: 21px;
   }
 }
-.cost-table-body td:first-child {
+.cost__table-body td:first-child {
   font-size: 0;
   border: none;
 
-  @media ($tablet) {
+  @include tablet-up {
+    padding-left: 15px;
     font-size: 14px;
     border: 2px solid #e5e5e5;
     text-transform: none;
   }
-  @media ($desctop) {
+  @include desctop-up {
+    padding-left: 21px;
     font-size: 18px;
   }
 }
-.cost-table-body td:nth-child(n+2) {
-  @media ($tablet) {
-    font-size: 0;
+.cost__table-body td:not(:first-child) {
+
+  @include tablet-up {
+    text-align: center;
   }
 }
-.cost-package-hit {
+.cost__table-body td:nth-child(n+2) {
+  @include tablet-up {
+    font-size: 0;
+  }
+  @include tablet-up
+}
+.cost__table-icon-yes {
+  float: right;
+  width: 30px;
+  height: auto;
+  margin-top: 4px;
+  margin-right: 17px;
+
+  @include tablet-up {
+    float: none;
+    margin-right: 0;
+  }
+}
+.cost__table-icon-yes path {
+  fill: #3dc644;
+}
+.cost__table-icon-no {
+  float: right;
+  width: 26px;
+  height: auto;
+  margin-right: 18px;
+
+  @include tablet-up {
+    float: none;
+    margin-right: 0;
+  }
+}
+.cost__table-icon-no path {
+  fill: #f25b26;
+}
+.cost__package-hit {
   position: relative;
 
   &::before {
@@ -144,8 +192,24 @@
   }
 }
 .cost__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
 
   @include tablet-up {
     display: none;
   }
+}
+.cost__toggles .slider__input {
+  display: none;
+}
+.cost__toggles .slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 9px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
 }
