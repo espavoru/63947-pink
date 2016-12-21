@@ -162,6 +162,40 @@ input[type="checkbox"]:checked + label:before {
 .form__user-contacts {
   padding: 15px 6.25% 42px;
 
+  &::before {
+
+    @include tablet-up {
+      content: '';
+      position: absolute;
+      top: 45px;
+      right: 60px;
+      width: 60px;
+      height: 63px;
+      background: url('../img/icon-phone.svg') center no-repeat, #e5e5e5;
+      z-index: 1;
+    }
+    @include desctop-up {
+      top: 42px;
+      left: 371px;
+    }
+  }
+  &::after {
+
+    @include tablet-up {
+      content: '';
+      position: absolute;
+      bottom: 66px;
+      right: 60px;
+      width: 60px;
+      height: 63px;
+      background: url('../img/icon-mail.svg') center no-repeat, #e5e5e5;
+      z-index: 1;
+    }
+    @include desctop-up {
+      top: 42px;
+    }
+  }
+
   @include tablet-up {
     position: relative;
     margin-top: 65px;
@@ -211,6 +245,7 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 .form__user-contacts input {
+  position: relative;
   padding-left: 20px;
   width: 100%;
   height: 63px;
@@ -222,6 +257,7 @@ input[type="checkbox"]:checked + label:before {
   color: #283645;
   &::-moz-placeholder { color: #283645; }
   &::-webkit-input-placeholder { color: #283645; }
+
 
   @include desctop-up {
     width: 45.7%;
