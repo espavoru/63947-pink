@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-              <g>
-                <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-                <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-                <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-                <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-              </g>
-            </svg>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="Pink logo">
+            </picture>
           </a>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -63,8 +61,14 @@
       </section>
       <section class="picture-users">
         <div class="picture-users__item  picture-users__item--panarama-day">
-          <img class="picture-users__image  picture-users__image--panarama-day" src="img/panorama-mobile@1x.jpg" alt="Панарама дня" width="659">
-          <b>Панорама дня</b>
+          <div class="picture-users__panarama-baner-wrapper">
+            <b>Панорама дня</b>
+          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="picture-users__image  picture-users__image--panarama-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панарама дня">
+          </picture>
           <div class="picture-users__item-wrapper  picture-users__item-wrapper--panarama-day">
             <cite class="picture-users__description-name">Анна</cite>
             <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(5 минут назад)</time>
@@ -76,69 +80,105 @@
         </div>
         <div class="picture-users__items-wrapper">
           <div class="picture-users__item">
-            <img class="picture-users__image" src="img/photo-1-mobile@1x.jpg" alt="Авто" width="576">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="picture-users__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Авто">
+            </picture>
             <div class="picture-users__info-wrapper">
               <cite class="picture-users__description-name">Левон</cite>
               <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(5 часов назад)</time>
               <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="picture-users__likes-btn" type="button" name="likes"></button>
-              <span class="picture-users__likes-text">Нравится:</span>
-              <span class="picture-users__likes-count">356</span>
+              <div class="picture-users__likes-wrapper">
+                <button class="picture-users__likes-btn" type="button" name="likes"></button>
+                <span class="picture-users__likes-text">Нравится:</span>
+                <span class="picture-users__likes-count">356</span>
+              </div>
             </div>
           </div>
           <div class="picture-users__item">
-            <img class="picture-users__image" src="img/photo-2-mobile@1x.jpg" alt="Барабаны" width="576">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="picture-users__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабаны" width="576">
+            </picture>
             <div class="picture-users__info-wrapper">
               <cite class="picture-users__description-name">Антон</cite>
               <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(12 часов назад)</time>
               <p>Соседи будут рады!</p>
-              <button class="picture-users__likes-btn" type="button" name="likes"></button>
-              <span class="picture-users__likes-text">Нравится:</span>
-              <span class="picture-users__likes-count">666</span>
+              <div class="picture-users__likes-wrapper">
+                <button class="picture-users__likes-btn" type="button" name="likes"></button>
+                <span class="picture-users__likes-text">Нравится:</span>
+                <span class="picture-users__likes-count">666</span>
+              </div>
             </div>
           </div>
           <div class="picture-users__item">
-            <img class="picture-users__image" src="img/photo-3-mobile@1x.jpg" alt="Прозрачная крыша" width="576">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="picture-users__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Прозрачная крыша" width="576">
+            </picture>
             <div class="picture-users__info-wrapper">
               <cite class="picture-users__description-name">Борис</cite>
               <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(20 часов назад)</time>
               <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="picture-users__likes-btn" type="button" name="likes"></button>
-              <span class="picture-users__likes-text">Нравится:</span>
-              <span class="picture-users__likes-count">215</span>
+              <div class="picture-users__likes-wrapper">
+                <button class="picture-users__likes-btn" type="button" name="likes"></button>
+                <span class="picture-users__likes-text">Нравится:</span>
+                <span class="picture-users__likes-count">215</span>
+              </div>
             </div>
           </div>
           <div class="picture-users__item">
-            <img class="picture-users__image" src="img/photo-4-mobile@1x.jpg" alt="Кубанская бахча" width="576">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="picture-users__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Кубанская бахча" width="576">
+            </picture>
             <div class="picture-users__info-wrapper">
               <cite class="picture-users__description-name">Сергей</cite>
               <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(25 часов назад)</time>
               <p>Самая кубанская в мире!</p>
-              <button class="picture-users__likes-btn" type="button" name="likes"></button>
-              <span class="picture-users__likes-text">Нравится:</span>
-              <span class="picture-users__likes-count">4</span>
+              <div class="picture-users__likes-wrapper">
+                <button class="picture-users__likes-btn" type="button" name="likes"></button>
+                <span class="picture-users__likes-text">Нравится:</span>
+                <span class="picture-users__likes-count">4</span>
+              </div>
             </div>
           </div>
           <div class="picture-users__item">
-            <img class="picture-users__image" src="img/photo-5-mobile@1x.jpg" alt="Вид с вершины" width="576">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="picture-users__image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Вид с вершины" width="576">
+            </picture>
             <div class="picture-users__info-wrapper">
               <cite class="picture-users__description-name">Максим</cite>
               <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(40 часов назад)</time>
               <p>Где снег-то?</p>
-              <button class="picture-users__likes-btn" type="button" name="likes"></button>
-              <span class="picture-users__likes-text">Нравится:</span>
-              <span class="picture-users__likes-count">150</span>
+              <div class="picture-users__likes-wrapper">
+                <button class="picture-users__likes-btn" type="button" name="likes"></button>
+                <span class="picture-users__likes-text">Нравится:</span>
+                <span class="picture-users__likes-count">150</span>
+              </div>
             </div>
           </div>
           <div class="picture-users__item">
-            <img class="picture-users__image" src="img/photo-6-mobile@1x.jpg" alt="С высоты полета" width="576">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="picture-users__image" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="С высоты полета" width="576">
+            </picture>
             <div class="picture-users__info-wrapper">
               <cite class="picture-users__description-name">Надежда</cite>
               <time class="picture-users__description-pos-time" datetime="2016-11-24T15:18:20">(40 часов назад)</time>
               <p>Всем GM и взаимные лайки!</p>
-              <button class="picture-users__likes-btn" type="button" name="likes"></button>
-              <span class="picture-users__likes-text">Нравится:</span>
-              <span class="picture-users__likes-count">2560</span>
+              <div class="picture-users__likes-wrapper">
+                <button class="picture-users__likes-btn" type="button" name="likes"></button>
+                <span class="picture-users__likes-text">Нравится:</span>
+                <span class="picture-users__likes-count">2560</span>
+              </div>
             </div>
           </div>
         </div>
@@ -152,43 +192,49 @@
       <section class="photo-edit">
         <form class="photo-edit__form" action="index.html"  method="post">
           <div class="photo-edit__picture">
-            <img src="img/photo-7-mobile@1x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+              <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="">
+            </picture>
           </div>
-          <div class="photo-edit__toggles">
-            <div class="edit-photo">
-              <div class="edit-photo__item-wrap">
-                <label class="edit-photo__crop edit-photo__item edit-photo__item--active" for="crop">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                    <path fill="none" d="M0,0h48v48H0V0z"/>
-                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                  </svg>
-                </label>
-                <input class="photo-edit__form-range" type="range" name="crop" id="crop" min="-50" max="50">
-              </div>
-              <div class="edit-photo__item-wrap">
-              <label class="edit-photo__color edit-photo__item " for="color">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect y="40" width="48" height="3"/>
-                </svg>
-              </label>
-              <input class="photo-edit__form-range" type="range" name="color" id="color" min="-50" max="50">
-              </div>
-              <div class="edit-photo__item-wrap">
-                <label class="edit-photo__light edit-photo__item " for="light">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                  </svg>
-                </label>
-                <input class="photo-edit__form-range" type="range" name="light" id="light" min="-50" max="50">
+          <div class="photo-edit__toggles-buttons-wrapper">
+            <div class="photo-edit__toggles">
+              <div class="edit-photo">
+                <div class="edit-photo__item-wrap">
+                  <label class="edit-photo__crop edit-photo__item edit-photo__item--active" for="crop">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    </svg>
+                  </label>
+                  <input class="photo-edit__form-range" type="range" name="crop" id="crop" min="-50" max="50">
+                </div>
+                <div class="edit-photo__item-wrap">
+                  <label class="edit-photo__color edit-photo__item " for="color">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                      <rect y="40" width="48" height="3"/>
+                    </svg>
+                  </label>
+                  <input class="photo-edit__form-range" type="range" name="color" id="color" min="-50" max="50">
+                </div>
+                <div class="edit-photo__item-wrap">
+                  <label class="edit-photo__light edit-photo__item " for="light">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                    </svg>
+                  </label>
+                  <input class="photo-edit__form-range" type="range" name="light" id="light" min="-50" max="50">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="photo-edit__buttons">
-            <input class="photo-edit__form-submit btn" type="submit" value="Запостить">
-            <input class="photo-edit__form-reset btn" type="reset" value="Отмена">
+            <div class="photo-edit__buttons">
+              <input class="photo-edit__form-submit btn" type="submit" value="Запостить">
+              <input class="photo-edit__form-reset btn" type="reset" value="Отмена">
+            </div>
           </div>
         </form>
       </section>
@@ -196,7 +242,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo page-footer__item">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Pink logo">
+          </picture>
         </div>
         <div class="page-footer__item">
           <ul class="page-footer__social">
