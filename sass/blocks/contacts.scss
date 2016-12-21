@@ -17,9 +17,9 @@
   @include tablet-up {
     padding-bottom: 13px;
   }
-	@include desctop-up {
-		padding-bottom: 12px;
-	}
+  @include desctop-up {
+    padding-bottom: 12px;
+  }
 }
 .contacts__items {
   display: flex;

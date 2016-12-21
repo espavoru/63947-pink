@@ -29,8 +29,8 @@
 
   @include tablet-up {
     @include container-fluid;
-		display: flex;
-		flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .picture-users__item--panarama-day {
@@ -227,8 +227,8 @@
 .picture-users__info-wrapper {
   display: flex;
   flex-wrap: wrap;
-	min-height: 121px;
-	margin-bottom: 20px;
+  min-height: 121px;
+margin-bottom: 20px;
   padding: 19px 17px;
   background-color: #f2f2f2;
 
