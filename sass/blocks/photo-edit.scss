@@ -65,7 +65,7 @@
   width: 100%;
   margin-top: 28px;
 
-  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  -webkit-appearance: none;
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -76,7 +76,7 @@
   &::-ms-track {
     width: 100%;
     cursor: pointer;
-    background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+    background: transparent;
     border-color: transparent;
     color: transparent;
   }
@@ -88,9 +88,9 @@
     border-radius: 50%;
     background-color: #f2f2f2;
     cursor: pointer;
-    margin-top: -7px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+    margin-top: -7px;
   }
-  &:focus::-webkit-slider-thumb {
+  &:active::-webkit-slider-thumb {
     background-color: $accent-color;
   }
   &::-moz-range-thumb {
@@ -101,6 +101,9 @@
     background: #f2f2f2;
     cursor: pointer;
     margin-top: -7px;
+  }
+  &:active::-moz-range-thumb {
+    background-color: $accent-color;
   }
   &::-ms-thumb {
     border: 2px solid $accent-color;
@@ -113,13 +116,13 @@
   }
   &::-webkit-slider-runnable-track {
     width: 100%;
-    height: 2px;
+    height: 0;
     cursor: pointer;
     border: 1px solid #283645;
   }
   &::-moz-range-track {
     width: 100%;
-    height: 2px;
+    height: 0;
     cursor: pointer;
     border: 1px solid #283645;
   }
@@ -130,6 +133,7 @@
     border: 1px solid #283645;
   }
   &::-ms-fill-lower {
+    height: 0;
     background: #f2f2f2;
     border: 1px solid #283645;
   }
@@ -137,6 +141,7 @@
     background: #f2f2f2;
   }
   &::-ms-fill-upper {
+    height: 0;
     background: #f2f2f2;
     border: 1px solid #283645;
   }
@@ -195,5 +200,8 @@
   }
 }
 .photo-edit__toggles-buttons-wrapper {
-  flex-basis: 50%;
+
+  @include tablet-up {
+    flex-basis: 50%;
+  }
 }
