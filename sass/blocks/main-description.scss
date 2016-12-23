@@ -15,7 +15,7 @@
     margin: 61px auto 40px;
     font-size: 18px;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 85%;
     margin-bottom: 35px;
   }
@@ -31,7 +31,7 @@
   @include tablet-up {
     display: none;
   }
-  @include desctop-up {
+  @include desktop-up {
     display: inline;
   }
 }

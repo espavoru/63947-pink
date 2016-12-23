@@ -7,11 +7,11 @@
   background-color: transparent;
   border: none;
 
-  @media ($tablet) {
+  @include tablet-up {
     top: 44px;
     right: 2%;
   }
-  @media ($desctop) {
+  @include desktop-up {
     display: none;
   }
 }
@@ -23,8 +23,9 @@
   margin: 0;
   padding: 0;
 
-  @media ($desctop) {
+  @include desktop-up {
     float: right;
+    padding-top: 36px;
   }
 }
 .main-nav__item {
@@ -37,12 +38,9 @@
   background-color: #283645;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000;
-  & a {
-    display: block;
-    color: #fff;
-  }
 
-  @media ($desctop) {
+
+  @include desktop-up {
     float: left;
     width: auto;
     padding: 0 40px;
@@ -50,12 +48,39 @@
     text-transform: capitalize;
     border: none;
     background-color: transparent;
-    line-height: 110px;
+    line-height: 37px;
     &:last-child {
       padding-right: 0;
     }
   }
 }
+.main-nav__link {
+  display: block;
+  color: #fff;
+
+  &:hover {
+    color: $accent-color;
+  }
+  &:active {
+    color: #fff;
+    opacity: 0.3;
+  }
+}
+.main-nav__link--active {
+  &:hover {
+    color: $accent-color;
+    border-bottom-color: $accent-color;
+  }
+  &:active {
+    opacity: 1;
+  }
+
+  @include desktop-up {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+
 @media ($mobile-device-only) {
   .main-nav--opened svg:first-child {
     display: none;

@@ -36,7 +36,7 @@
     order: -3;
     padding: 0;
   }
-  @include desctop-up {
+  @include desktop-up {
     flex-basis: 46.3%;
     padding-top: 20px;
     // padding-right: 35px;
@@ -75,7 +75,7 @@
     width: 84%;
     flex-grow: 1;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 78%;
   }
 }
@@ -91,7 +91,7 @@
     background-color: transparent;
     border: 2px solid #e5e5e5;
   }
-  @include desctop-up {
+  @include desktop-up {
     padding: 30px 0 34px 18px;
 
   }
@@ -102,7 +102,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include desctop-up {
+  @include desktop-up {
     flex-direction: column;
     align-items: flex-end;;
     height: 164px;
@@ -151,7 +151,7 @@
   @include tablet-up {
     padding-left: 59px;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 29%;
   }
 }
@@ -174,7 +174,7 @@ input[type="checkbox"]:checked + label:before {
       background: url('../img/icon-phone.svg') center no-repeat, #e5e5e5;
       z-index: 1;
     }
-    @include desctop-up {
+    @include desktop-up {
       top: 42px;
       left: 371px;
     }
@@ -191,7 +191,7 @@ input[type="checkbox"]:checked + label:before {
       background: url('../img/icon-mail.svg') center no-repeat, #e5e5e5;
       z-index: 1;
     }
-    @include desctop-up {
+    @include desktop-up {
       top: 42px;
     }
   }
@@ -203,7 +203,7 @@ input[type="checkbox"]:checked + label:before {
     order: -1;
     border: 2px solid #e5e5e5;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 39px;
     padding-top: 42px;
     flex-basis: 100%;
@@ -259,7 +259,7 @@ input[type="checkbox"]:checked + label:before {
   &::-webkit-input-placeholder { color: #283645; }
 
 
-  @include desctop-up {
+  @include desktop-up {
     width: 45.7%;
   }
 }
@@ -278,14 +278,14 @@ input[type="checkbox"]:checked + label:before {
     order: 1;
     padding-bottom: 26px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-right: auto;
     padding-left: 59px;
     padding-bottom: 13px;
   }
 }
 .form__user-contacts label:first-of-type {
-  @include desctop-up {
+  @include desktop-up {
     order: 1;
     margin-right: auto;
     padding-bottom: 13px;
@@ -304,7 +304,7 @@ input[type="checkbox"]:checked + label:before {
     background-color: transparent;
     border: 2px solid #e5e5e5;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 38px;
     margin-bottom: 26px;
     padding-top: 27px;
@@ -361,7 +361,7 @@ input[type="checkbox"]:checked + label:before {
       left: 37px;
     }
   }
-  @include desctop-up {
+  @include desktop-up {
     padding: 32px 0 12px 97px;
   }
 }
@@ -390,7 +390,7 @@ input[type="checkbox"]:checked + label:before {
     padding: 45px 58px 48px;
     border: 2px solid #e5e5e5;
   }
-  @include desctop-up {
+  @include desktop-up {
     flex-basis: 100%;
     padding-top: 42px;
     padding-bottom: 40px;
@@ -429,7 +429,7 @@ input[type="checkbox"]:checked + label:before {
   @include tablet-up {
     height: 193px;
   }
-  @include desctop-up {
+  @include desktop-up {
     height: 128px;
   }
 }
@@ -460,7 +460,7 @@ input[type="checkbox"]:checked + label:before {
     width: 74%;
     margin-top: 48px;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 37.3%;
     margin-top: 46px;
   }
@@ -480,7 +480,7 @@ input[type="checkbox"]:checked + label:before {
 .form__descrioption-required-fields .hidden {
   display: none;
 
-  @include desctop-up {
+  @include desktop-up {
     display: inline;
   }
 }

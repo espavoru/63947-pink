@@ -13,10 +13,10 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  @media ($tablet) {
+  @include tablet-up {
     width: 620px;
   }
-  @media ($desctop) {
+  @include desktop-up {
       width: 960px;
       padding: 0 10px;
   }
@@ -25,18 +25,18 @@
   width: auto;
   padding: 0 6.25%;
 
-  @media ($tablet) {
+  @include tablet-up {
     width: 93.9393%;
     margin: 0 auto;
     padding: 0;
   }
-  @media ($desctop) {
+  @include desktop-up {
     width: 940px;
   }
 }
 @mixin tablet-up {
   @media (min-width: 660px) { @content; }
 }
-@mixin desctop-up {
+@mixin desktop-up {
   @media (min-width: 960px) { @content; }
 }

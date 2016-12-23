@@ -1,11 +1,11 @@
 .page-footer {
   padding-top: 40px;
 
-  @media ($tablet) {
+  @include tablet-up {
     display: block;
     padding: 35px 0 34px;
   }
-  @media ($desctop) {
+  @include desktop-up {
     // padding: 70px 0;
     padding: 20px 0 69px;
   }
@@ -17,12 +17,12 @@
   justify-content: space-between;
   align-items: center;
 
-  @media ($tablet) {
+  @include tablet-up {
     flex-direction: row;
   }
 }
 .page-footer__item {
-  @media ($tablet) {
+  @include tablet-up {
     // display: inline-block;
   }
 }
@@ -30,7 +30,7 @@
   margin-bottom: 37px;
   text-align: center;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-bottom: 15px;
   }
 }
@@ -41,7 +41,7 @@
   width: 177px;
   padding: 0;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin: 0;
   }
 }
@@ -57,12 +57,12 @@
   text-align: center;
   @include clearfix;
 
-  @media ($tablet) {
+  @include tablet-up {
     line-height: 30px;
     text-align: center;
     padding: 6px 0 0 17px;
   }
-  @media ($desctop) {
+  @include desktop-up {
     font-size: 18px;
     padding-left: 0;
   }

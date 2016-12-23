@@ -8,7 +8,7 @@
     background: url('../img/bg-back-mobile@2x.jpg') center top no-repeat;
   }
 
-  @media ($tablet) {
+  @include tablet-up {
     min-height: 438px;
     padding-top: 144px;
     padding-bottom: 47px;
@@ -18,7 +18,7 @@
       background: url('../img/bg-back-tablet@2x.jpg') center top no-repeat;
     }
   }
-  @media ($desctop) {
+  @include desktop-up {
     min-height: auto;
     padding-top: 139px;
     padding-bottom: 68px;
@@ -38,7 +38,7 @@
   color: #fff;
   line-height: 29px;
 
-  @media ($tablet) {
+  @include tablet-up {
     font-size: 50px;
     line-height: 60px;
   }

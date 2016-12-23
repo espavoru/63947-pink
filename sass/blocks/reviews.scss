@@ -10,7 +10,7 @@
     padding-top: 21px;
     padding-bottom: 20px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 0;
     padding-top: 167px;
     padding-bottom: 49px;
@@ -43,7 +43,7 @@
   padding: 0;
   list-style: none;
 
-  @include desctop-up {
+  @include desktop-up {
     &::before {
       content: '';
       position: absolute;
@@ -79,7 +79,7 @@
     display: none;
   }
 
-  @include desctop-up {
+  @include desktop-up {
     width: 690px;
     margin: auto;
   }
@@ -99,7 +99,7 @@
     @include font(18px);
     line-height: 30px;
   }
-  @include desctop-up {
+  @include desktop-up {
     &::before,
     &::after {
       display: none;
@@ -117,7 +117,7 @@
     margin: 17px 0 9px;
     font-size: 20px;
   }
-  @include desctop-up {
+  @include desktop-up {
     font-size: 24px;
     margin-top: 18px;
     margin-bottom: 2px;
@@ -129,7 +129,7 @@
   @include tablet-up {
     @include font;
   }
-  @include desctop-up {
+  @include desktop-up {
     font-size: 18px;
     line-height: 30px;
   }
@@ -143,7 +143,7 @@
   @include tablet-up {
     margin-top: 41px;
   }
-  @include desctop-up {
+  @include desktop-up {
     display: none;
   }
 }

@@ -21,7 +21,7 @@
                   #1d2631;
     }
   }
-  @include desctop-up {
+  @include desktop-up {
     padding-top: 0;
     padding-bottom: 0;
     background: url('../img/bg-back-desktop@1x.jpg') center top no-repeat,
@@ -48,7 +48,7 @@
     @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: url('../img/iphone-hand-tablet@2x.png') 50% bottom no-repeat;
     }
-  @include desctop-up {
+  @include desktop-up {
     padding-top: 218px;
     padding-bottom: 86px;
     background: url('../img/iphone-hand-desktop@1x.png') -15% bottom no-repeat;
@@ -82,7 +82,7 @@
     line-height: 48px;
     color: #fff;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 237px;
     font-size: 50px;
     line-height: 60px;
@@ -99,12 +99,19 @@
   @include font(18px, 700);
   text-align: center;
   line-height: 49px;
+  &:hover {
+    color: $accent-color;
+    background-color: #fff;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 
   @include tablet-up {
     width: 100%;
     margin: 31px auto;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin: 52px auto;
     font-size: 21px;
   }
@@ -143,7 +150,7 @@
     margin: 12px 0;
     font-size: 18px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin: 31px 0;
   }
 }

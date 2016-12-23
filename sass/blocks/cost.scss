@@ -7,7 +7,7 @@
     height: auto;
     padding-bottom: 68px;
   }
-  @include desctop-up {
+  @include desktop-up {
     padding-bottom: 95px;
   }
 }
@@ -24,7 +24,7 @@
   @include tablet-up {
     margin-top: 34px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 62px;
   }
 }
@@ -58,7 +58,7 @@
     margin-top: 9px;
     font-size: 16px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 13px;
     font-size: 18px;
   }
@@ -72,7 +72,7 @@
     margin-top: -3px;
     margin-bottom: 7px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 2px;
     margin-bottom: 17px;
     font-size: 24px;
@@ -84,14 +84,15 @@
   padding-left: 21px;
   border: 2px solid #e5e5e5;
   background-color: #fff;
-  line-height: 2;
+  line-height: 31px;
 
   @include tablet-up {
     width: 25%;
     height: 47px;
     padding-left: 0;
+		line-height: 0;
   }
-  @include desctop-up {
+  @include desktop-up {
     height: 61px;
   }
 }
@@ -105,7 +106,7 @@
     border: 2px solid #e5e5e5;
     text-transform: none;
   }
-  @include desctop-up {
+  @include desktop-up {
     padding-left: 21px;
     font-size: 18px;
   }
@@ -125,7 +126,7 @@
 .cost__table-icon-yes {
   float: right;
   width: 30px;
-  height: auto;
+  height: 30px;
   margin-top: 4px;
   margin-right: 17px;
 
@@ -140,7 +141,7 @@
 .cost__table-icon-no {
   float: right;
   width: 26px;
-  height: auto;
+  height: 26px;
   margin-right: 18px;
 
   @include tablet-up {
@@ -168,7 +169,7 @@
       height: 61px;
       background-image: url('../img/bg-hit-tablet.svg');
     }
-    @include desctop-up {
+    @include desktop-up {
       width: 74px;
       height: 73px;
       background-image: url('../img/bg-hit.svg');
@@ -185,7 +186,7 @@
       top: 2px;
       left: 5px;
     }
-    @include desctop-up {
+    @include desktop-up {
       top: 9px;
       left: 9px;
     }

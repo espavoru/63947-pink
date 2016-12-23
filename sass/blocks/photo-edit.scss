@@ -5,7 +5,7 @@
     padding-top: 52px;
     padding-bottom: 55px;
   }
-  @include desctop-up {
+  @include desktop-up {
     padding: 0;
     background-color: transparent;
   }
@@ -20,7 +20,7 @@
     height: 404px;
     @include container-fluid;
   }
-  @include desctop-up {
+  @include desktop-up {
     height: 514px;
     margin-bottom: 78px;
     padding-top: 52px;
@@ -36,7 +36,7 @@
     flex-basis: 50%;
     text-align: left;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-left: 80px;
     flex-basis: 40%;
   }
@@ -57,7 +57,7 @@
     width: 100%;
     border: none;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-right: 60px;
   }
 }
@@ -156,7 +156,7 @@
     width: 100%;
     margin: 0;
   }
-  @include desctop-up {
+  @include desktop-up {
     display: flex;
     flex-wrap: nowrap;
     width: 438px;
@@ -174,7 +174,7 @@
     margin-left: 12%;
     margin-right: 4%;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 183px;
     margin-right: 10%;
     margin-left: 0;
@@ -189,7 +189,7 @@
     margin-left: 12%;
     margin-right: 4%;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 183px;
     margin-left: 0;
   }

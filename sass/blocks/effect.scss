@@ -1,12 +1,12 @@
 .effect {
   display: none;
 
-  @media ($tablet) {
+  @include tablet-up {
     display: flex;
     padding-top: 25px;
     padding-bottom: 66px;
   }
-  @media ($desctop) {
+  @include desktop-up {
     padding-top: 42px;
     padding-bottom: 65px;
     background-color: $bg-grey;
@@ -18,7 +18,7 @@
 
   @include tablet-up {
   }
-  @include desctop-up {
+  @include desktop-up {
     padding-right: 25px;
   }
 }
@@ -35,7 +35,7 @@
     @include font(96px, 700);
     color: $accent-color;
 
-    @include desctop-up {
+    @include desktop-up {
       top: 121px;
       left: 79px;
       font-size: 120px;
@@ -46,7 +46,7 @@
 .effect__icon {
   width: 238px;
 
-  @include desctop-up {
+  @include desktop-up {
     width: 298px;
   }
 }
@@ -56,7 +56,7 @@
   padding-top: 41px;
   padding-right: 14px;
 
-  @include desctop-up {
+  @include desktop-up {
     width: 60%;
     padding-top: 65px;
   }
@@ -66,7 +66,7 @@
   @include font(30px, 700);
   line-height: 36px;
 
-  @media ($desctop) {
+  @include desktop-up {
     margin-bottom: 24px;
     line-height: 30px;
     & br {
@@ -80,7 +80,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 
-  @media ($desctop) {
+  @include desktop-up {
     @include font(18px);
     line-height: 30px;
     margin-bottom: 30px;
@@ -90,8 +90,17 @@
   line-height: 24px;
   color: $accent-color;
   text-decoration: underline;
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+    text-decoration: none;
+  }
 
-  @media ($desctop) {
+  @include desktop-up {
     @include font(18px);
     line-height: 30px;
   }
