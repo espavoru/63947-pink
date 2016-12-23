@@ -1,10 +1,10 @@
 .picture-users {
   margin-top: 32px;
 
-  @media ($tablet) {
+  @include tablet-up {
     margin-top: 31px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-top: 48px;
   }
 }
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
   }
-  @include desctop-up {
+  @include desktop-up {
     flex-basis: 31.9%;
   }
 }
@@ -44,7 +44,7 @@
     padding: 25px 27px 15px;
     margin-bottom: 50px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-bottom: 49px;
     padding-right: 30px;
   }
@@ -64,12 +64,12 @@
   background-color: $accent-color;
   z-index: 1;
 
-  @media ($tablet) {
+  @include tablet-up {
     top: 57px;
     right: 0;
   }
 
-  @include desctop-up {
+  @include desktop-up {
     top: 54px;
   }
 }
@@ -150,7 +150,7 @@
     padding-bottom: 69px;
     font-size: 18px;
   }
-  @include desctop-up {
+  @include desktop-up {
     padding-top: 5px;
     padding-bottom: 66px;
   }
@@ -237,7 +237,7 @@ margin-bottom: 20px;
     flex-basis: 48.4%;
     padding: 25px 27px 22px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-bottom: 54px;
   }
 }

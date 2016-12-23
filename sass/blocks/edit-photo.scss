@@ -14,7 +14,7 @@
     margin-left: auto;
     padding: 0;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-left: 0;
     width: 87%;
   }
@@ -31,7 +31,7 @@
     margin-bottom: 11px;
     padding: 0px 18px 12px 0;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 93%;
     margin-left: 0;
     padding-right: 0;
@@ -47,7 +47,7 @@
     margin-right: 15px;
     margin-left: 3px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-left: 0;
     margin-right: 45px;
     padding-right: 30px;
@@ -58,7 +58,7 @@
   @include tablet-up {
     width: 24px;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 48px;
   }
 
@@ -83,7 +83,7 @@
 }
 .edit-photo__color {
 
-  @include desctop-up {
+  @include desktop-up {
     padding-top: 4px;
   }
 }
@@ -94,7 +94,7 @@
     margin-right: 10px;
     margin-left: 8px;
   }
-  @include desctop-up {
+  @include desktop-up {
     margin-right: 38px;
     margin-left: 6px;
   }
@@ -105,7 +105,7 @@
     width: 17px;
     height: 50px;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 32px;
   }
 }

@@ -8,7 +8,7 @@
   @include tablet-up {
     margin-bottom: -109px;
   }
-  @include desctop-up {
+  @include desktop-up {
     height: 110px;
     margin-bottom: -110px;
   }
@@ -19,7 +19,7 @@
     width: auto;
     padding: 0;
   }
-  @include desctop-up {
+  @include desktop-up {
     width: 960px;
     margin: 0 auto;
     padding: 0 10px;
@@ -35,7 +35,7 @@
     padding-bottom: 39px;
   }
 
-  @include desctop-up {
+  @include desktop-up {
     float: left;
     padding-left: 0;
     padding-bottom: 0;
