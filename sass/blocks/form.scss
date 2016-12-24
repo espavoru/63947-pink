@@ -23,12 +23,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.form__item-chekboxes label:nth-of-type(n+5) {
 
-  @include tablet-up {
-
+  @include desktop-up {
+    width: 28%;
   }
 }
-
 .form__user-info {
   padding: 0px 6.25% 42px;
 
