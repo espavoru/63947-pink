@@ -99,10 +99,10 @@
             </fieldset>
             <fieldset class="form__user-achievements">
               <legend class="form__user-achievements-title">Ваши безбашенные достижения в путешествии</legend>
-              <div class="form__item">
-                <input type="checkbox" name="shark" id="shark" checked>
+              <div class="form__item  form__item-chekboxes">
+                <input type="checkbox" name="shark" id="shark">
                 <label for="shark">Сделал селфи с акулой</label>
-                <input type="checkbox" name="beach" id="beach" checked>
+                <input type="checkbox" name="beach" id="beach">
                 <label for="beach">Обгорел на пляже</label>
                 <input type="checkbox" name="chuck-norris" id="chuck-norris">
                 <label for="chuck-norris">Видел Чака Норриса</label>
@@ -126,7 +126,7 @@
             <fieldset class="form__user-apps">
               <legend class="form__user-apps-title">С каким приложением путешествовали?</legend>
               <div class="form__item">
-                <input class="form__input-radio" type="radio" name="user-apps" id="ios" value="ios" checked>
+                <input class="form__input-radio" type="radio" name="user-apps" id="ios" value="ios">
                 <label for="ios">Pink для iOS</label>
                 <input class="form__input-radio" type="radio" name="user-apps" id="android" value="android">
                 <label for="android">Pink на Android</label>
@@ -195,41 +195,6 @@
       </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var headerLogo = document.querySelector('.page-header__logo');
-
-
-      navMain.classList.remove('main-nav--nojs');
-      // Временно отключено для тестирования
-      // navMain.classList.add('main-nav--closed');
-      // navMain.classList.remove('main-nav--opened');
-      // headerLogo.style.backgroundColor = 'transparent';
-      // headerLogo.style.borderBottom = 'none';
-      // if (document.body.offsetWidth < 660) {
-      //   headerLogo.style.paddingBottom = '18px';
-      // };
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          headerLogo.style.backgroundColor = '#283645';
-          headerLogo.style.borderBottom = '1px solid #000';
-          if (document.body.offsetWidth < 660) {
-            headerLogo.style.paddingBottom = '21px';
-          };
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          headerLogo.style.backgroundColor = 'transparent';
-          headerLogo.style.borderBottom = 'none';
-          if (document.body.offsetWidth < 660) {
-            headerLogo.style.paddingBottom = '18px';
-          };
-        };
-      });
-    </script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

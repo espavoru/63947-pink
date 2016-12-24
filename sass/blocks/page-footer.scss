@@ -1,12 +1,12 @@
 .page-footer {
   padding-top: 40px;
+  padding-bottom: 38px;
 
   @include tablet-up {
     display: block;
     padding: 35px 0 34px;
   }
   @include desktop-up {
-    // padding: 70px 0;
     padding: 20px 0 69px;
   }
 }
@@ -44,6 +44,9 @@
   @include tablet-up {
     margin: 0;
   }
+  @include desktop-up {
+    margin-left: 13px;
+  }
 }
 .social-link {
   text-align: center;
@@ -71,6 +74,9 @@
   display: block;
   float: right;
   margin-left: 15px;
+}
+.page-footer__copyright-link svg {
+  vertical-align: middle;
 }
 .page-footer__copyright-link path {
   fill: $accent-color;
