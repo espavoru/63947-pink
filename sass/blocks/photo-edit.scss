@@ -64,6 +64,7 @@
 .photo-edit__form-range {
   width: 100%;
   margin-top: 28px;
+  padding: 0;
 
   -webkit-appearance: none;
 
@@ -107,12 +108,15 @@
   }
   &::-ms-thumb {
     border: 2px solid $accent-color;
-    height: 14px;
     width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: #f2f2f2;
     cursor: pointer;
-    margin-top: -3px;
+    margin-top: -2px;
+  }
+  &:active::-ms-thumb {
+    background-color: $accent-color;
   }
   &::-webkit-slider-runnable-track {
     width: 100%;
@@ -137,16 +141,10 @@
     background: #f2f2f2;
     border: 1px solid #283645;
   }
-  &:focus::-ms-fill-lower {
-    background: #f2f2f2;
-  }
   &::-ms-fill-upper {
     height: 0;
     background: #f2f2f2;
     border: 1px solid #283645;
-  }
-  &:focus::-ms-fill-upper {
-    background: #f2f2f2;
   }
 }
 .photo-edit__buttons {
