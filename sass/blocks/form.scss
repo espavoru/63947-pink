@@ -258,7 +258,7 @@ input[type="checkbox"]:checked + label:before {
   color: #283645;
   &::-moz-placeholder { color: #283645; }
   &::-webkit-input-placeholder { color: #283645; }
-
+  outline: none;
 
   @include desktop-up {
     width: 45.7%;
