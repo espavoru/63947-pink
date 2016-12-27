@@ -35,8 +35,9 @@
 }
 .picture-users__item--panarama-day {
   position: relative;
-  // display: flex;
-  // flex-direction: column;
+}
+.picture-users__item--panarama-day picture {
+  height: 100%;
 }
 .picture-users__item-wrapper--panarama-day {
 
