@@ -1,7 +1,12 @@
 * {
   box-sizing: border-box;
 }
-body {
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
   @include font;
   color: #283645;
