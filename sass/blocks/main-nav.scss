@@ -6,6 +6,9 @@
   right: 4%;
   background-color: transparent;
   border: none;
+  &:active {
+    opacity: 0.3;
+  }
 
   @include tablet-up {
     top: 44px;
@@ -14,6 +17,9 @@
   @include desktop-up {
     display: none;
   }
+}
+.main-nav__toggle:hover path {
+  fill: $accent-color;
 }
 .main-nav__wrapper {
 }

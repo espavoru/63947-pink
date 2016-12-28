@@ -1,5 +1,14 @@
-.form {
-
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea {
+  outline: none;
+  &:hover {
+    border-color: #283645;
+  }
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 .form__items-wrapper {
   display: flex;
@@ -167,15 +176,15 @@ input[type="checkbox"]:checked + label:before {
     @include tablet-up {
       content: '';
       position: absolute;
-      top: 45px;
+      top: 47px;
       right: 60px;
       width: 60px;
-      height: 63px;
+      height: 59px;
       background: url('../img/icon-phone.svg') center no-repeat, #e5e5e5;
       z-index: 1;
     }
     @include desktop-up {
-      top: 42px;
+      top: 44px;
       left: 371px;
     }
   }
@@ -184,15 +193,15 @@ input[type="checkbox"]:checked + label:before {
     @include tablet-up {
       content: '';
       position: absolute;
-      bottom: 66px;
+      bottom: 68px;
       right: 60px;
       width: 60px;
-      height: 63px;
+      height: 59px;
       background: url('../img/icon-mail.svg') center no-repeat, #e5e5e5;
       z-index: 1;
     }
     @include desktop-up {
-      top: 42px;
+      top: 44px;
     }
   }
 
@@ -364,6 +373,14 @@ input[type="checkbox"]:checked + label:before {
     padding: 32px 0 12px 97px;
   }
 }
+.form__user-apps label:hover::before,
+.form__user-achievements label:hover::before {
+  border-color: #283645;
+}
+.form__user-apps label:active::before,
+.form__user-achievements label:active::before {
+  border-color: $accent-color;
+}
 .form__input-radio:checked + label:after {
   content: '';
   position: absolute;
@@ -453,6 +470,12 @@ input[type="checkbox"]:checked + label:before {
   border: none;
   border-radius: 3px;
   background-color: #2aab6d;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @include tablet-up {
     width: 74%;
