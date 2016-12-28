@@ -3,9 +3,9 @@
   width: auto;
   height: 732px;
   padding-bottom: 271px;
-  background: url('../img/bg-back-mobile@1x.jpg') center top no-repeat,
-              #1d2631;
-              background-size: auto 461px;
+  background: url('../img/bg-back-mobile@1x.jpg') center top no-repeat;
+  background-size: auto 461px;
+  background-color: #1d2631;
   @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url('../img/bg-back-mobile@2x.jpg');
   }
@@ -14,8 +14,7 @@
     height: auto;
     padding-top: 0;
     padding-bottom: 0;
-    background: url('../img/bg-back-tablet@1x.jpg') center top no-repeat,
-                #1d2631;
+    background: url('../img/bg-back-tablet@1x.jpg') center top no-repeat;
     @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url('../img/bg-back-tablet@2x.jpg');
       background-size: auto 727px;
@@ -24,12 +23,10 @@
   @include desktop-up {
     padding-top: 0;
     padding-bottom: 0;
-    background: url('../img/bg-back-desktop@1x.jpg') center top no-repeat,
-                #1d2631;
+    background: url('../img/bg-back-desktop@1x.jpg') center top no-repeat;
     @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url('../img/bg-back-desktop@2x.jpg');
       background-size: auto 852px;
-      background-position-y: 12px;
     }
   }
 }
@@ -49,14 +46,14 @@
     background: url('../img/iphone-hand-tablet@1x.png') 50% bottom no-repeat;
     @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url('../img/iphone-hand-tablet@2x.png');
-      background-size: 888px;
+      background-size: 701px;
       background-position-x: 49%;
     }
+  }
   @include desktop-up {
     padding-top: 218px;
     padding-bottom: 86px;
     background: url('../img/iphone-hand-desktop@1x.png') -15% bottom no-repeat;
-  }
     @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url('../img/iphone-hand-desktop@2x.png');
       background-size: 1050px;
@@ -137,6 +134,7 @@
 .download-apps__item {
   display: inline-block;
   list-style: none;
+  vertical-align: middle;
 }
 .download-apps__link {
   display: block;

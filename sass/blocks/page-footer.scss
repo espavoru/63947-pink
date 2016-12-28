@@ -80,4 +80,10 @@
 }
 .page-footer__copyright-link path {
   fill: $accent-color;
+  &:active {
+    opacity: 0.3;
+  }
+}
+.page-footer__copyright-link:hover path {
+  fill: #283645;
 }
