@@ -9,7 +9,7 @@ function openMenu() {
   navMain.classList.add('main-nav--opened');
   headerLogo.style.backgroundColor = '#283645';
   headerLogo.style.borderBottom = '1px solid #000';
-  if (document.body.offsetWidth < 660) {
+  if (window.innerWidth < 660) {
     headerLogo.style.paddingBottom = '21px';
   };
 }
@@ -18,7 +18,7 @@ function closeMenu() {
   navMain.classList.remove('main-nav--opened');
   headerLogo.style.backgroundColor = 'transparent';
   headerLogo.style.borderBottom = 'none';
-  if (document.body.offsetWidth < 660) {
+  if (window.innerWidth < 660) {
     headerLogo.style.paddingBottom = '18px';
   };
 }

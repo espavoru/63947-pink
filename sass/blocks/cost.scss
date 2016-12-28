@@ -13,7 +13,15 @@
 }
 .cost__triangle-top {
   width: 100%;
-  height: 100%;
+  height: 25px;
+
+  @include tablet-up {
+    height: 52px;
+  }
+  @include desktop-up {
+    height: 65px;
+    margin-bottom: 10px;
+  }
 }
 .cost__wrapper {
   position: relative;
